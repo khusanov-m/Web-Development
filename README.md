@@ -13,8 +13,10 @@ New updates 10.05.2021
 - clear code was written
 - visual effects enhaced
 
-*Further updates*
+*Next updates for IT - House LLC*
 - animate sections
 - open and close FAQ questions
 - add team members section
 - external pages for FAQ and Services
+
+Result Private School - Next on the queue for improvements
