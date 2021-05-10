@@ -4,3 +4,17 @@ There are used mainly HTML and CSS tools and basic things in JavaScript (Current
 Further deployments will include more fitures in JS with animations and optimization of CSS using SASS
 
 Main file to see project in each folder is index.html
+
+New updates 10.05.2021
+** IT - House LLC v.2**
+
+- implemented SCSS framework
+- code was improved
+- clear code was written
+- visual effects enhaced
+
+*Further updates*
+- animate sections
+- open and close FAQ questions
+- add team members section
+- external pages for FAQ and Services
