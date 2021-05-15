@@ -1,7 +1,10 @@
-# All websites are included separately with their company names
+# All websites are included in seperate folders
 There are used mainly HTML and CSS tools and basic things in JavaScript (Currently only in Result website) such as slider in the header
 
 Main file to see project in each folder is index.html
+
+Now : Result Private School - Next on the queue for improvements
+
 
 New updates 10.05.2021
 ** IT - House LLC v.2**
@@ -16,5 +19,3 @@ New updates 10.05.2021
 - open and close FAQ questions
 - add team members section
 - external pages for FAQ and Services
-
-Result Private School - Next on the queue for improvements
