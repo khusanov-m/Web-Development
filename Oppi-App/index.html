@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Oppi App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,400,500,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=e81e5104-251c-4b79-be5e-921edf1f9646&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <!-- Первый экран -->
+    <header class="header">
+      <div class="container">
+        <!-- Шапка -->
+        <div class="head">
+          <div class="row align-items-center">
+            <div class="col-xl-3 col-lg-2 col-auto">
+              <a href="#" class="head__logo">
+                <img src="img/logo.png" alt="Логотип компании" />
+              </a>
+            </div>
+            <div
+              class="col-xl-6 col-lg-7 col-auto d-flex align-items-center order-lg-0 order-1"
+            >
+              <nav class="head__menu">
+                <ul class="head__links d-flex">
+                  <li class="head__item">
+                    <a href="./index.html" class="head__link"> Главная </a>
+                  </li>
+                  <li class="head__item">
+                    <a href="#advantages" class="head__link"> Преимущества </a>
+                  </li>
+                  <li class="head__item">
+                    <a href="#services" class="head__link"> Услуги </a>
+                  </li>
+                  <li class="head__item">
+                    <a href="#about" class="head__link"> О нас </a>
+                  </li>
+                  <li class="head__item">
+                    <a href="#reviews" class="head__link"> Отзывы </a>
+                  </li>
+                </ul>
+                <button type="button" class="menu-close" id="closeMenu">
+                  x
+                </button>
+              </nav>
+              <div class="hamburger">
+                <img src="img/hamburger.svg" alt="Гамбургер" />
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-auto flex-grow-1 d-flex justify-content-end"
+            >
+              <a href="#" class="head__btn button"> 14 дней бесплатно </a>
+            </div>
+          </div>
+        </div>
+        <!-- Шапка конец -->
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="offer">
+              <h1 class="offer__title">
+                Умное приложение для&nbsp;общения с фанатами
+              </h1>
+              <p class="offer__disc">
+                Надоело использовать десятки приложений для общения с
+                подписчиками? Попробуй новый формат взаимодействия!
+              </p>
+              <a href="#advantages" class="offer__link">Узнать больше</a>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div class="images" id="scene">
+              <div>
+                <img src="img/circles-bg.png" alt="Кольца" class="images__bg" />
+              </div>
+              <div>
+                <img
+                  src="img/phone-main.png"
+                  alt="Изображение приложения"
+                  class="images__center"
+                />
+              </div>
+              <div data-depth="0.6" class="layer">
+                <img
+                  src="img/dialog-1.png"
+                  alt="Изображение переписки"
+                  class="images__chat-one"
+                />
+              </div>
+              <div data-depth="0.3" class="layer">
+                <img
+                  src="img/dialog-2.png"
+                  alt="Изображение переписки"
+                  class="images__chat-two"
+                />
+              </div>
+              <div>
+                <img
+                  src="img/pic.png"
+                  alt="Изображение снимка"
+                  class="images__pic"
+                />
+              </div>
+              <div>
+                <img
+                  src="img/main-image-sm.png"
+                  alt="Изображение приложения"
+                  class="main-img-sm d-sm-none"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Первый экран END -->
+
+    <section class="proof">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section__title">
+              <span id="advantages">Эти преимущества</span>
+              Восхитительны
+            </h2>
+          </div>
+        </div>
+        <div class="row d-flex align-items-lg-start">
+          <div class="col-lg-8 col-md-6">
+            <div class="row cards">
+              <div class="col-lg-6">
+                <div class="card card-active">
+                  <img
+                    src="img/image 14.png"
+                    alt="Картинка преимущества"
+                    class="card__img"
+                  />
+                  <h3 class="card__title">Продуктивный дизайн</h3>
+                  <p class="card__disc">
+                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                    сгенерировать несколько абзацев
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <img
+                    src="img/image 19.png"
+                    alt="Картинка преимущества"
+                    class="card__img"
+                  />
+                  <h3 class="card__title">Быстрая навигация</h3>
+                  <p class="card__disc">
+                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                    сгенерировать несколько абзацев
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <img
+                    src="img/image 19.png"
+                    alt="Картинка преимущества"
+                    class="card__img"
+                  />
+                  <h3 class="card__title">Контроль за статистикой</h3>
+                  <p class="card__disc">
+                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                    сгенерировать несколько абзацев
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <img
+                    src="img/image 14-1.png"
+                    alt="Картинка преимущества"
+                    class="card__img"
+                  />
+                  <h3 class="card__title">Восхищайте</h3>
+                  <p class="card__disc">
+                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                    сгенерировать несколько абзацев
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center"
+          >
+            <div class="tabs-contents">
+              <div class="tab-content active">
+                <img
+                  src="img/tabs/content_1.png"
+                  alt="Изображение приложения"
+                  class="phone img-fluid"
+                />
+              </div>
+              <div class="tab-content">
+                <img
+                  src="img/tabs/content_2.png"
+                  alt="Изображение приложения"
+                  class="phone img-fluid"
+                />
+              </div>
+              <div class="tab-content">
+                <img
+                  src="img/tabs/content_3.png"
+                  alt="Изображение приложения"
+                  class="phone img-fluid"
+                />
+              </div>
+              <div class="tab-content">
+                <img
+                  src="img/tabs/content_4.png"
+                  alt="Изображение приложения"
+                  class="phone img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="keys">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section__title">
+              <span id="services">продуктивные</span>
+              кейсы которые работают
+            </h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-lg-6 column-left">
+            <div class="design">
+              <img
+                src="img/image 22.png"
+                alt="Фото телефона"
+                class="design__img img-fluid"
+              />
+              <div class="design__info">
+                <h4 class="design__title">Продуктивный дизайн</h4>
+                <p class="design__disc">Сайт рыбатекст поможет дизайнеру</p>
+              </div>
+            </div>
+            <div class="design">
+              <img
+                src="img/image 23.png"
+                alt="Фото телефона"
+                class="design__img img-fluid"
+              />
+              <div class="design__info">
+                <h4 class="design__title">Продуктивный дизайн</h4>
+                <p class="design__disc">Сайт рыбатекст поможет дизайнеру</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 column-right">
+            <div class="design">
+              <img
+                src="img/image 21.png"
+                alt="Фото телефона"
+                class="design__img img-fluid"
+              />
+              <div class="design__info">
+                <h4 class="design__title">Продуктивный дизайн</h4>
+                <p class="design__disc">Сайт рыбатекст поможет дизайнеру</p>
+              </div>
+            </div>
+            <div class="design">
+              <img
+                src="img/image 20.png"
+                alt="Фото телефона"
+                class="design__img img-fluid"
+              />
+              <div class="design__info">
+                <h4 class="design__title">Продуктивный дизайн</h4>
+                <p class="design__disc">Сайт рыбатекст поможет дизайнеру</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="numbers">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="section__title">
+              <span id="about">простые</span>
+              цифры
+            </h2>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="number">
+                  <div class="number__progress d-flex justify-content-center">
+                    <img
+                      src="img/circle-100.svg"
+                      alt="Progress-bar"
+                      class="number__circle"
+                    />
+                    <span>100%</span>
+                  </div>
+                  <p class="number__desc">Качество обслуживания</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="number">
+                  <div class="number__progress d-flex justify-content-center">
+                    <img
+                      src="img/circle-49.svg"
+                      alt="Progress-bar"
+                      class="number__circle"
+                    />
+                    <span>4.9</span>
+                  </div>
+                  <p class="number__desc">Средняя оценка</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="img/student.png"
+              alt="Изображение студента"
+              class="img-fluid illustration"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section__title">
+              <span>отзывы</span>
+              пользователей
+            </h2>
+            <!-- Слайдер -->
+            <div class="slider swiper-container">
+              <div class="slider__list swiper-wrapper">
+                <div class="person swiper-slide">
+                  <div class="person__headline d-flex align-items-center">
+                    <img src="img/person.png" alt="" class="person__pic" />
+                    <div class="person__info">
+                      <h5 class="preson__name">Антон Михайлов</h5>
+                      <span class="person__position">Блогер</span>
+                    </div>
+                  </div>
+                  <p class="person__speach">
+                    «Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                    сгенерировать несколько абзацев Сайт рыбатекст поможет
+                    дизайнеру, верстальщику, вебмастеру»
+                  </p>
+                </div>
+
+                <div class="person swiper-slide">
+                  <!-- Один отзыв -->
+                  <div class="person__headline d-flex align-items-center">
+                    <img src="img/person.png" alt="" class="person__pic" />
+                    <div class="person__info">
+                      <h5 class="preson__name">Антон Михайлов</h5>
+                      <span class="person__position">Блогер</span>
+                    </div>
+                  </div>
+                  <p class="person__speach">
+                    «Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                    сгенерировать несколько абзацев Сайт рыбатекст поможет
+                    дизайнеру, верстальщику, вебмастеру»
+                  </p>
+                </div>
+                <!-- Один отзыв конец-->
+
+                <div class="person swiper-slide">
+                  <div class="person__headline d-flex align-items-center">
+                    <img src="img/person.png" alt="" class="person__pic" />
+                    <div class="person__info">
+                      <h5 class="preson__name">Антон Михайлов</h5>
+                      <span class="person__position">Блогер</span>
+                    </div>
+                  </div>
+                  <p class="person__speach">
+                    «Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                    сгенерировать несколько абзацев Сайт рыбатекст поможет
+                    дизайнеру, верстальщику, вебмастеру»
+                  </p>
+                </div>
+
+                <div class="person swiper-slide">
+                  <!-- Один отзыв -->
+                  <div class="person__headline d-flex align-items-center">
+                    <img src="img/person.png" alt="" class="person__pic" />
+                    <div class="person__info">
+                      <h5 class="preson__name">Антон Михайлов</h5>
+                      <span class="person__position">Блогер</span>
+                    </div>
+                  </div>
+                  <p class="person__speach">
+                    «Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                    сгенерировать несколько абзацев Сайт рыбатекст поможет
+                    дизайнеру, верстальщику, вебмастеру»
+                  </p>
+                </div>
+                <!-- Один отзыв конец-->
+
+                <div class="person swiper-slide">
+                  <div class="person__headline d-flex align-items-center">
+                    <img src="img/person.png" alt="" class="person__pic" />
+                    <div class="person__info">
+                      <h5 class="preson__name">Антон Михайлов</h5>
+                      <span class="person__position">Блогер</span>
+                    </div>
+                  </div>
+                  <p class="person__speach">
+                    «Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                    сгенерировать несколько абзацев Сайт рыбатекст поможет
+                    дизайнеру, верстальщику, вебмастеру»
+                  </p>
+                </div>
+              </div>
+              <!-- Навигация по слайдеру -->
+              <ul class="dots">
+                <li class="active">
+                  <button type="button"></button>
+                </li>
+                <li class="slick-active">
+                  <button type="button"></button>
+                </li>
+                <li>
+                  <button type="button"></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Карта с формой -->
+
+    <section class="map">
+      <div class="container-fluid">
+        <div class="map-block" id="map"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <form class="form" method="get" id="form-help">
+              <h5 class="form__title">Нужна помощь?</h5>
+              <div class="form__field">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="firstName" required />
+              </div>
+              <div class="form__field">
+                <label for="tel">Телефон</label>
+                <input type="number" id="phone" name="phoneNumber" required />
+              </div>
+              <button type="submit" class="form__btn button" id="submit-help">
+                Отправить
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <a href="#" class="logo">
+              <img src="img/logo.png" alt="Логотип компании" />
+            </a>
+            <p class="footer-text">
+              Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+              сгенерировать несколько абзацев
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <nav class="menu">
+              <h5 class="menu__title">Меню</h5>
+              <ul class="menu__list">
+                <li>
+                  <a href="./index.html">Главная</a>
+                </li>
+                <li>
+                  <a href="#advantages">Преимущества</a>
+                </li>
+                <a href="#about">О нас</a>
+                <li></li>
+                <li>
+                  <a href="#reviews">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <nav class="menu">
+              <h5 class="menu__title">Меню</h5>
+              <ul class="menu__list">
+                <li>
+                  <a href="./index.html">Главная</a>
+                </li>
+                <li>
+                  <a href="#advantages"> Преимущества </a>
+                </li>
+                <li>
+                  <a href="#about">О нас</a>
+                </li>
+                <li>
+                  <a href="#reviews">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <nav class="menu">
+              <h5 class="menu__title">Меню</h5>
+              <ul class="menu__list">
+                <li>
+                  <a href="./index.html">Главная</a>
+                </li>
+                <li>
+                  <a href="#advantages"> Преимущества</a>
+                </li>
+                <li>
+                  <a href="#about">О нас</a>
+                </li>
+                <li>
+                  <a href="#reviews">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
