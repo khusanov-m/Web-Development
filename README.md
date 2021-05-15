@@ -7,7 +7,7 @@ Now : Result Private School - Next on the queue for improvements
 
 
 New updates 10.05.2021
-** IT - House LLC v.2**
+* IT - House LLC v.2*
 
 - implemented SCSS framework
 - code was improved
