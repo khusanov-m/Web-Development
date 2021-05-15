@@ -3,10 +3,16 @@ There are used mainly HTML and CSS tools and basic things in JavaScript (Current
 
 Main file to see project in each folder is index.html
 
-Now : Result Private School - Next on the queue for improvements
+New updates 15.05.2021
+---
+*Oppi-App*
 
+- Social Media simple website
+- Several sections about program
+- JS features like slider, parallax and form validate
 
-New updates 10.05.2021
+Date: 10.05.2021
+---
 * IT - House LLC v.2 *
 
 - implemented SCSS framework
@@ -22,7 +28,7 @@ New updates 10.05.2021
 
 
 Date : 24.04.2021
-
+---
 * IT - House LLC v.1 *
 - Simple technology used HTML5 and CSS3
 - Semantic tags
