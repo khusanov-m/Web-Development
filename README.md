@@ -7,7 +7,7 @@ Now : Result Private School - Next on the queue for improvements
 
 
 New updates 10.05.2021
-* IT - House LLC v.2*
+* IT - House LLC v.2 *
 
 - implemented SCSS framework
 - code was improved
@@ -19,3 +19,11 @@ New updates 10.05.2021
 - open and close FAQ questions
 - add team members section
 - external pages for FAQ and Services
+
+
+Date : 24.04.2021
+
+* IT - House LLC v.1 *
+- Simple technology used HTML5 and CSS3
+- Semantic tags
+- Several informative sections
