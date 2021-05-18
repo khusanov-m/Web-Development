@@ -15,7 +15,7 @@ New updates 15.05.2021
 
 Date: 10.05.2021
 ---
-* IT - House LLC v.2 *
+*IT - House LLC v.2*
 
 - implemented SCSS framework
 - code was improved
@@ -31,7 +31,7 @@ Date: 10.05.2021
 
 Date : 24.04.2021
 ---
-* IT - House LLC v.1 *
+*IT - House LLC v.1*
 - Simple technology used HTML5 and CSS3
 - Semantic tags
 - Several informative sections
