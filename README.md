@@ -1,13 +1,11 @@
 # All websites are included in seperate folders
 
 ## Notice that no one is allowed to use for commercial purpose included files
-There are used mainly HTML and CSS tools and basic things in JavaScript (Currently only in Result website) such as slider in the header
-
-Main file to see project in each folder is index.html
+There are used mainly HTML and CSS tools and smooth animations JavaScript
 
 New updates 15.05.2021
 ---
-*Oppi-App*
+*[Oppi-App](https://oppai.netlify.app/)* - Designed by WAYUP | Built by Mukhammad Khojiakbar Khusanov
 
 - Social Media simple website
 - Several sections about program
@@ -15,23 +13,27 @@ New updates 15.05.2021
 
 Date: 10.05.2021
 ---
-*IT - House LLC v.2*
+*[IT - House LLC v.2](https://it-house-llc.netlify.app/)* - Designed and Built by Mukhammad Khojiakbar Khusanov
 
 - implemented SCSS framework
 - code was improved
 - clear code was written
 - visual effects enhaced
+- pixel perfect design
 
-*Next updates for IT - House LLC*
-- animate sections
-- open and close FAQ questions
-- add team members section
-- external pages for FAQ and Services
-
-
-Date : 24.04.2021
+Date : 23.04.2021
 ---
-*IT - House LLC v.1*
+*[Result Private School](https://result-private-school.netlify.app/)* - Designed and Built by Mukhammad Khojiakbar Khusanov
+
+- has offer construction
+- divided into several sections
+- designed with customer wishes
+- pixel perfect design
+
+Date : 14.04.2021
+---
+*IT - House LLC v.1* - Designed and Built by Mukhammad Khojiakbar Khusanov
+
 - Simple technology used HTML5 and CSS3
 - Semantic tags
 - Several informative sections
