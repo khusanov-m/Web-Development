@@ -5,7 +5,7 @@ There are used mainly HTML and CSS tools and smooth animations JavaScript
 
 New updates 15.05.2021
 ---
-*[Oppi-App](https://oppai.netlify.app/)* - Designed by WAYUP | Built by Mukhammad Khojiakbar Khusanov
+*[Oppi-App](https://oppai.netlify.app/)* - Designed by [WAYUP](https://wayup.in/) | Built by Mukhammad Khojiakbar Khusanov
 
 - Social Media simple website
 - Several sections about program
