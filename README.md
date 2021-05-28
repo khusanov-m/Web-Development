@@ -3,7 +3,18 @@
 ## Notice that no one is allowed to use for commercial purpose included files
 There are used mainly HTML and CSS tools and smooth animations JavaScript
 
-New updates 15.05.2021
+New updates 25.05.2021
+---
+*[Portfolio Website](https://khusanov-m-r.netlify.app/)* - Designed and Built by Mukhammad Khojiakbar Khusanov
+
+- Designed as a Portfolio container website
+- Include swiper js library
+- Implemented iconic fonts (Font Awesome)
+- Custom animated sections
+- JS features with showing and hiding effects
+
+
+Date: 15.05.2021
 ---
 *[Oppi-App](https://oppai.netlify.app/)* - Designed by [WAYUP](https://wayup.in/) | Built by Mukhammad Khojiakbar Khusanov
 
