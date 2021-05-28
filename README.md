@@ -1,7 +1,7 @@
 # All websites are included in seperate folders
 
 ## Notice that no one is allowed to use for commercial purpose included files
-There are used mainly HTML and CSS tools and smooth animations JavaScript
+
 
 New updates 25.05.2021
 ---
