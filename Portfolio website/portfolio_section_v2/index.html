@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Voyage Slider | GSAP</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+	<section class="portfolio">
+		<div class="app">
+
+			<div class="cardList">
+				<button class="cardList__btn btn btn--left">
+					<i class="fab fa-cloudsmith left-arrow"></i>
+				</button>
+		
+				<div class="cards__wrapper">
+					<div class="card current--card">
+						<a href="https://khusanov-m-r.netlify.app/"><div class="card__image">
+							<img src="img/portfolio.png" alt="" />
+						</div></a>
+					</div>
+		
+					<div class="card next--card">
+						<div class="card__image">
+							<img src="img/it.png" alt="" />
+						</div>
+					</div>
+		
+					<div class="card previous--card">
+						<div class="card__image">
+							<img src="img/result.png" alt="" />
+						</div>
+					</div>
+				</div>
+		
+				<button class="cardList__btn btn btn--right">
+					<div class="icon">
+						<i class="fab fa-cloudsmith fa-rotate-180 right-arrow"></i>
+					</div>
+				</button>
+			</div>
+		
+			<div class="infoList">
+				<div class="info__wrapper">
+					<div class="info current--info">
+						<h1 class="text name">Portfolio</h1>
+						<h4 class="text location">Website</h4>
+						<p class="text description">Personal webpage</p>
+					</div>
+		
+					<div class="info next--info">
+						<h1 class="text name">IT - House</h1>
+						<h4 class="text location">LLC</h4>
+						<p class="text description">IT - Service Company</p>
+					</div>
+		
+					<div class="info previous--info">
+						<h1 class="text name">Result</h1>
+						<h4 class="text location">Education Center</h4>
+						<p class="text description">Enhance your knowledge</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="app__bg">
+				<div class="app__bg__image current--image">
+					<img src="img/portfolio.png" alt="" />
+				</div>
+				<div class="app__bg__image next--image">
+					<img src="img/it.png" alt="" />
+				</div>
+				<div class="app__bg__image previous--image">
+					<img src="img/result.png" alt="" />
+				</div>
+			</div>
+		</div>
+		
+		<!-- Loading Page Animation
+		<div class="loading__wrapper">
+			<div class="loader--text">Loading...</div>
+			<div class="loader">
+				<span></span>
+			</div>
+		</div> -->
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- partial -->
+  <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script><script  src="js/script.js"></script>
+
+</body>
+</html>
