@@ -342,6 +342,7 @@ h2 {
 }
 
 .controls {
+  display: none;
   color: #116466;
   font-size: 20px;
 }
