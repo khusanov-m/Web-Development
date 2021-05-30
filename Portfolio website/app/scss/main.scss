@@ -510,6 +510,10 @@ h3 {
   }
 }
 
+.collector .details p:first-child:hover i {
+  color: #d34a47;
+}
+
 .details {
   margin-bottom: 15px;
   p {
@@ -532,7 +536,8 @@ h3 {
 .ms-others,
 .langs,
 .soft-tools,
-.cms {
+.cms,
+.collector {
   margin: 25px 0 15px 0;
 
   & > p {
@@ -552,7 +557,7 @@ h3 {
 .php,
 .d3,
 .ms-others,
-.cms {
+.collector {
   margin: 25px auto 0 235px;
 }
 
