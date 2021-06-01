@@ -6,6 +6,10 @@ New updates 25.05.2021
 ---
 *[Tours](https://tours-khusanov-m-r.netlify.app/)* - Designed [Creative People](https://dribbble.com/CreativePeoples) and Built by Mukhammad Khojiakbar Khusanov
 
+- Website of Tourism Agency
+- Booking and Searching elements
+
+
 Date: 25.05.2021
 ---
 *[Portfolio Website](https://khusanov-m-r.netlify.app/)* - Designed and Built by Mukhammad Khojiakbar Khusanov
