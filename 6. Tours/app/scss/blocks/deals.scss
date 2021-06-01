@@ -1,0 +1,72 @@
+.deals {
+  padding-top: 50px;
+  margin-bottom: 120px;
+
+  .container {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  h2 {
+    @extend %title;
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+.deals-btn {
+  width: 170px;
+  height: 50px;
+
+  @extend %btn-style;
+}
+
+.time {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  p {
+    margin-left: 15px;
+    font-size: 24px;
+    color: $description;
+  }
+}
+
+.tour {
+  margin-right: 30px;
+
+  h3 {
+    margin: 30px 0 30px 0;
+    max-width: 230px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+  }
+}
+
+.tour-info,
+.time {
+  padding-left: 30px;
+}
+
+.tour-info {
+  p {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin: 40px 0 0 0;
+      color: $text;
+      font-weight: 600;
+      font-size: 36px;
+    }
+  }
+}

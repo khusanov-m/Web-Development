@@ -1,0 +1,101 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Sofia Pro';
+  background: #fff;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.header {
+  background: linear-gradient(180deg, rgba(0, 168, 204, 0.05) 0%, rgba(0, 168, 204, 0.05) 100%);
+  z-index: 1;
+}
+
+.top {
+  background: url("../img/header.png") no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  padding-top: 35px;
+  font-family: 'Sofia Pro';
+  position: relative;
+  z-index: 2;
+  margin-bottom: 80px;
+}
+
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  @extend %center;
+
+  ul {
+    margin-left: 325px;
+  }
+  li {
+    display: inline;
+    margin-right: 30px;
+    font-weight: 400;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      color: #000;
+    }
+  }
+}
+
+.logo {
+  @extend %center;
+
+  p {
+    font-weight: 600;
+    color: $primary;
+    margin-left: 5px;
+    font-size: 30px;
+  }
+}
+
+.bg-text {
+  margin-top: 250px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  border-color: #083C4C;
+  font-weight: 900;
+  font-size: 75px;
+  max-width: 550px;
+  line-height: 85px;
+  /* or 113% */
+  
+  letter-spacing: 0.05em;
+
+  text-shadow: 
+		-0   -1px 0   #000000,
+		 0   -1px 0   #000000,
+		-0    1px 0   #000000,
+		 0    1px 0   #000000,
+		-1px -0   0   #000000,
+		 1px -0   0   #000000,
+		-1px  0   0   #000000,
+		 1px  0   0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000;  
+}

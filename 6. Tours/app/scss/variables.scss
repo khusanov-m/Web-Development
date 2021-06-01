@@ -1,0 +1,32 @@
+//bacgrounds
+$body-bg: linear-gradient(
+  180deg,
+  rgba(0, 168, 204, 0.1) 0%,
+  rgba(0, 168, 204, 0.05) 100%
+);
+
+//text
+$primary: #188182;
+$text: #009d98;
+$description: #7a7a7a;
+
+//ready to use
+
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%title {
+  color: #130f40;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+%btn-style {
+  background: $text;
+  box-shadow: 0px 15px 25px rgba(0, 157, 152, 0.25);
+  border-radius: 4px;
+  @extend %center;
+}

@@ -1,0 +1,342 @@
+// About section styles
+
+.part {
+  background: url("../img/particles.png");
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  left: 800px;
+}
+
+.modal {
+  z-index: 2;
+  position: absolute;
+  width: 897px;
+  height: 152px;
+  background: #ffffff;
+  box-shadow: 0px 20px 100px rgba(24, 129, 130, 0.1);
+  border-radius: 50px 5px;
+  float: right;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: -80px 150px 0 0;
+}
+
+.where,
+.when,
+.how {
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  width: 200px;
+  height: 50px;
+}
+
+.modal-btn {
+  width: 138px;
+  height: 50px;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Sofia Pro";
+  cursor: pointer;
+  margin-right: 20px;
+
+  @extend %btn-style;
+}
+
+.where,
+.when,
+.how {
+  border-radius: 4px;
+}
+
+input[type="date"],
+input[list="country"],
+input[list="transport"],
+button {
+  font-family: "Sofia Pro";
+
+  &:active {
+    font-family: "Sofia Pro";
+  }
+}
+
+.where,
+.when,
+.how {
+  padding-left: 20px;
+  background-position: 90% 50%;
+}
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.where {
+  background: url("../img/where.png") no-repeat;
+  margin-left: 20px;
+  background-position: 90% 50%;
+}
+
+.how {
+  background: url("../img/how.png") no-repeat;
+  background-position: 90% 50%;
+}
+
+.when {
+  background: url("../img/when.png") no-repeat;
+  background-position: 90% 50%;
+}
+
+.wrapper {
+  display: flex;
+  margin: 0 auto;
+}
+
+.building {
+  z-index: 3;
+  position: absolute;
+  margin: 200px 0 0 -50px;
+
+  img {
+    height: 550px;
+    width: 445px;
+  }
+}
+
+.part2 {
+  background: url("../img/particles2.png");
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: -1;
+  bottom: -20px;
+  left: -10px;
+}
+
+.rounds {
+  background: url("../img/rounds.png");
+  width: 275px;
+  height: 275px;
+  position: relative;
+  left: -120px;
+  z-index: -1;
+  bottom: 500px;
+}
+
+.square {
+  background: #ffc107;
+  border-radius: 10px;
+  width: 85px;
+  height: 85px;
+  position: relative;
+  z-index: -1;
+  left: 390px;
+  bottom: 50px;
+}
+
+.info {
+  margin: 250px 0 0 450px;
+}
+
+.part3 {
+  background: url("../img/particles3.png") no-repeat;
+  width: 765px;
+  height: 420px;
+  padding: 100px 0 0 100px;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: $text;
+    line-height: 50px;
+    max-width: 320px;
+    margin-bottom: 20px;
+  }
+  p {
+    color: $description;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 390px;
+    margin-bottom: 30px;
+  }
+
+  a {
+    color: #fff;
+
+    div {
+      width: 141px;
+      height: 45px;
+      
+      @extend %btn-style;
+      @extend %center;
+    }
+  }
+}
+
+// Popular Section Styles
+
+.clouds {
+  background: url("../img/clouds.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin-top: -10px;
+}
+
+.summer {
+  margin-bottom: 60px;
+  padding-top: 50px;
+}
+
+.popular .container {
+  z-index: 1;
+  padding-top: 300px;
+
+  .wrapper {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    @extend %title;
+  }
+  a {
+    color: #fff;
+  }
+}
+
+.popular-btn {
+  width: 198px;
+  height: 56px;
+  
+  @extend %btn-style;
+  @extend %center;
+}
+
+.zan {
+  margin-right: 30px;
+}
+
+.book-btn {
+  opacity: 0;
+  background: #ffc107;
+  border-radius: 4px 10px;
+  width: 130px;
+  height: 50px;
+  color: #fff;
+  font-weight: 600;
+  z-index: 1;
+  position: relative;
+  bottom: 100px;
+  left: 50px;
+  padding: 15px 0 0 30px;
+}
+
+.zan:hover .book-btn {
+  opacity: 1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.zan-slider {
+  padding-bottom: 70px;
+}
+
+.zan-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.zan-title {
+  h3 {
+    font-weight: 600;
+    font-size: 36px;
+    color: #130f40;
+    margin-bottom: 15px;
+  }
+  p {
+    color: $description;
+  }
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+
+  p {
+    color: $text;
+    margin-bottom: 0 !important;
+
+    &:nth-child(2) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.user {
+  background: url("../img/user.png");
+  height: 14px;
+}
+
+.calendar {
+  background: url("../img/calendar.png");
+  height: 16px;
+}
+
+.user,
+.calendar {
+  width: 16px;
+  height: 16px;
+  margin-right: 15px;
+}
+
+.zan-price {
+  p {
+    color: $text;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: right;
+  }
+}
+
+.rate {
+  background: url("../img/stars.png");
+  width: 120px;
+  height: 20px;
+  margin: 12px 0 60px 0;
+}
+
+.zan-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.zan-left,
+.zan-right {
+  width: 45px;
+  height: 45px;
+  background: #009d98;
+  box-shadow: 0px 15px 25px rgba(0, 157, 152, 0.3);
+  border-radius: 50%;
+  
+  @extend %center;
+
+  cursor: pointer;
+}
+
+.zan-left {
+  margin-right: 20px;
+}
+
+.zan-right {
+  transform: scale(-1, 1);
+}
+
