@@ -4,7 +4,7 @@
 
 New updates 25.05.2021
 ---
-*[Tours](https://tours-khusanov-m-r.netlify.app/)* - Designed Creative People and Built by Mukhammad Khojiakbar Khusanov
+*[Tours](https://tours-khusanov-m-r.netlify.app/)* - Designed [Creative People](https://dribbble.com/CreativePeoples) and Built by Mukhammad Khojiakbar Khusanov
 
 Date: 25.05.2021
 ---
