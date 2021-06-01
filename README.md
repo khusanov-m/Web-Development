@@ -2,8 +2,11 @@
 
 ## Notice that no one is allowed to use for commercial purpose included files
 
-
 New updates 25.05.2021
+---
+*[Tour]()* - Designed Creative People and Built by Mukhammad Khojiakbar Khusanov
+
+Date: 25.05.2021
 ---
 *[Portfolio Website](https://khusanov-m-r.netlify.app/)* - Designed and Built by Mukhammad Khojiakbar Khusanov
 
