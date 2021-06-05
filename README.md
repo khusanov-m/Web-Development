@@ -14,9 +14,9 @@ New updates: 10.05.2021
 ---
 *[IT - House LLC v.2](https://it-house-llc.netlify.app/)* - Designed and Built by Mukhammad Khojiakbar Khusanov
 
-- several device versions available
-- gulp collector used
-- comments in each file
+- Several device versions available
+- Gulp collector used
+- Comments in each file
 
 Date: 25.05.2021
 ---
