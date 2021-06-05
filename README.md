@@ -2,8 +2,15 @@
 
 ## Notice that no one is allowed to use for commercial purpose included files
 
+New updates: 10.05.2021
+---
+*[IT - House LLC v.2](https://it-house-llc.netlify.app/)* - Designed and Built by Mukhammad Khojiakbar Khusanov
 
-New updates 25.05.2021
+- several device versions available
+- gulp collector used
+- comments in each file
+
+Date: 25.05.2021
 ---
 *[Portfolio Website](https://khusanov-m-r.netlify.app/)* - Designed and Built by Mukhammad Khojiakbar Khusanov
 
