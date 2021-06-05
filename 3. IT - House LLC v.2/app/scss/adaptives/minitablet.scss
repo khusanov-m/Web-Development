@@ -1,0 +1,134 @@
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+
+  .header {
+    height: 800px;
+    background-position: 50% 0;
+  }
+  
+  .company-info {
+    max-width: 738px;
+  }
+
+  .user-svg {
+    margin-left: 120px;
+  }
+
+  .gamburger-svg {
+    margin-left: 80px;
+  }
+
+  .tablet-992px a {
+    margin-left: 100px;
+  }
+
+  // About
+  .about {
+    margin-top: -280px;
+  }
+
+  .about-img-1 p,
+  .about-img-3 p {
+    margin: -110px 0 0 375px;
+  }
+
+  .about-img-2 p {
+    margin: -110px 0 0 -325px;
+  }
+
+  .about-gallery {
+    padding-bottom: 30px;
+
+    .border {
+      margin-bottom: 30px;
+
+      &:nth-child(3) {
+        margin-top: 400px;
+      }
+    }
+  }
+
+  // Services
+  .services {
+    margin-bottom: 0;
+  }
+
+  .serv-bar {
+    margin-left: auto;
+
+    li {
+      margin-right: 30px;
+
+      &:nth-child(5) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .item {
+    width: 226px;
+    height: 226px;
+  }
+
+  .item-1 + p,
+  .item-5 + p {
+    margin-top: 15px;
+  }
+
+  .item-2 + p,
+  .item-4 + p {
+    margin-top: 13px;
+  }
+
+  .item-3 {
+    padding-top: 18px;
+
+    & + p {
+      margin-top: 6px;
+    }
+  }
+
+  .item-6 + p {
+    margin-top: 12px;
+  }
+
+  .item-7 + p {
+    margin-top: 10px;
+  }
+
+  // Footer
+  .footer {
+    background-position: 30% 0;
+    padding: 355px 0 100px;
+    margin-top: -180px;
+
+    .container {
+      max-width: 666px;
+    }
+  }
+
+  .location {
+    margin: 340px 2px 0 -902px;
+  }
+
+  .map {
+    width: 482px;
+  }
+
+  .footer-btn {
+    display: inline;
+    margin-left: 109px;
+    margin-top: 115px;
+  }
+
+  .author {
+    margin: 65px 0 0 225px;
+  }
+
+  .credentials {
+    max-width: 460px;
+  }
+}

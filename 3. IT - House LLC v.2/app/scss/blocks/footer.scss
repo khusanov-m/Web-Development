@@ -1,0 +1,140 @@
+// Footer Styling
+
+.footer {
+  background: url("../img/footer1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: auto;
+  padding: 250px 0 100px 0;
+
+  .nav-bar {
+    flex-direction: column;
+  }
+
+  .company {
+    margin-top: 60px;
+  }
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts,
+.info {
+  display: block;
+
+  h3 {
+    padding: 0;
+    text-align: left;
+    margin: 56px 0 45px 0;
+  }
+
+  ul {
+    @extend %domine-regular;
+    color: $info;
+
+    li {
+      margin-bottom: 30px;
+      max-width: 350px;
+      position: relative;
+      z-index: 1;
+
+      &:last-child,
+      .urls {
+        margin: -5px 0 0 0;
+        display: flex;
+      }
+
+      a {
+        color: $info;
+      }
+    }
+  }
+}
+
+.urls {
+  padding-left: 10px;
+  a {
+    margin: 0 5px 0 0;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.info h3 {
+  margin-left: 70px;
+}
+
+.location h3 {
+  padding: 0;
+  text-align: left;
+  margin: 56px 0 45px 0;
+}
+
+.map {
+  height: 300px;
+  width: 470px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.footer-btn {
+  display: none;
+}
+
+.author {
+  width: 568px;
+  height: 428px;
+  position: absolute;
+  margin: 20px 0 0 60px;
+}
+
+// JS Helper
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.inactive-list {
+  text-decoration: none;
+}
+
+.active-list {
+  text-decoration: underline;
+}
+
+.que-active {
+  display: block;
+}
+
+.que-inactive {
+  display: none;
+}
+
+.rotate {
+  transform: rotate();
+}
+
+.credentials {
+  margin-top: 50px;
+  @extend %mont-bold;
+  color: $info;
+
+  a {
+    color: $info;
+
+    &:hover {
+      color: $title;
+    }
+  }
+}

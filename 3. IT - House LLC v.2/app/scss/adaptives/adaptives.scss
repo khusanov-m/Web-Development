@@ -1,0 +1,188 @@
+/* Responsive */
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+  // Header
+  .header {
+    height: 70vh;
+  }
+
+  .header-info {
+    margin-top: 80px;
+    justify-content: center;
+  }
+
+  .info-gallery {
+    margin-top: 0px;
+  }
+
+  .gal-1 {
+    width: 279px;
+    height: 248px;
+  }
+  .gal-2 {
+    width: 320px;
+    height: 285px;
+  }
+
+  // Services
+  .serv-bg {
+    width: 400px;
+    top: 1350px;
+  }
+
+  .serv-bar li:last-child {
+    color: $primary;
+  }
+
+  // Faq
+  .faq-img-1 {
+    width: 344px - 50px;
+    height: 237px - 50px;
+  }
+
+  .faq-img-2 {
+    width: 523px - 50px;
+    height: 336px - 50px;
+    margin-top: 400px;
+  }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 950px;
+  }
+
+  // Header
+  .header .nav-bar,
+  .buttons {
+    display: none;
+  }
+
+  .tablet-992px {
+    display: block;
+    align-items: center;
+    display: flex;
+
+    a {
+      color: $info;
+      font-weight: 700;
+      font-family: $domine;
+      margin-left: 170px;
+    }
+  }
+
+  .user-svg,
+  .gamburger-svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .user-svg {
+    margin-left: 200px;
+  }
+
+  .gamburger-svg {
+    margin-left: 130px;
+  }
+
+  .header-info {
+    left: 0;
+  }
+
+  .company-name {
+    margin-bottom: 10px;
+  }
+
+  .company-info {
+    max-width: 700px;
+  }
+
+  .info-btn {
+    margin-top: 30px;
+  }
+
+  .gal-1,
+  .gal-2 {
+    display: none;
+  }
+
+  // About Section
+  .section-title {
+    padding-top: 50px;
+  }
+
+  .about-gallery {
+    display: block;
+
+    div:nth-child(2) {
+      float: right;
+    }
+
+    div:nth-child(3) {
+      margin-top: 339px;
+    }
+  }
+
+  .about-img-1 p,
+  .about-img-2 p,
+  .about-img-3 p {
+    position: absolute;
+  }
+
+  .about-img-1 p,
+  .about-img-3 p {
+    margin: -100px 0 0 350px;
+    text-align: left;
+  }
+
+  .about-img-2 p {
+    margin: -110px 0px 0 -300px;
+    text-align: right;
+  }
+
+  // Services
+  .serv-bg {
+    display: none;
+  }
+
+  .item:last-child {
+    display: none;
+  }
+
+  .serv-bar {
+    li:nth-child(1), li:nth-child(6) {
+      display: none;
+    }
+  }
+  
+  // Faq
+  .faq-img-1, .faq-img-2 {
+    display: none;
+  }
+
+  // Footer
+  .author {
+    width: 568px - 100px;
+    height: 428px - 100px;
+    margin: 65px 0 0 40px;
+  }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+
+  .user-svg,
+  .gamburger-svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* 0 - 576px */
+@media screen and (max-width: 576px) {
+}

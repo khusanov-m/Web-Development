@@ -1,0 +1,73 @@
+// About Section Styling
+
+.about {
+  margin-bottom: 50px;
+}
+
+h3 {
+  @extend %section-title;
+  text-align: center;
+  padding: 100px 0 51px 0;
+}
+
+.about-gallery {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.about-img-1,
+.about-img-2,
+.about-img-3 {
+  width: 368px;
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(
+    125deg,
+    rgba(153, 160, 192, 0.5) 0%,
+    rgba(153, 160, 192, 0) 103.14%
+  );
+  box-shadow: inset -5px -5px 4px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 4px rgba(255, 255, 255, 0.1);
+  padding: 45px 49px 0 50px;
+
+  p {
+    @extend %domine-regular;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0 auto;
+  }
+
+  img {
+    width: 270px;
+    height: 189px;
+  }
+}
+
+.border {
+  width: 370px;
+  height: 345px;
+  border: double 4px transparent;
+  border-radius: 11px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(
+      92.83deg,
+      rgba(153, 160, 192, 0.5) 0%,
+      rgba(153, 160, 192, 0) 103.14%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin: -3px 4px 0 0;
+}
+
+.about-img-1 p {
+  max-width: 250px;
+}
+
+.about-img-2 p {
+  max-width: 220px;
+}
+
+.about-img-3 p {
+  max-width: 215px;
+}

@@ -1,0 +1,17 @@
+@import "variables"; //пишем переменные
+
+@import "reset"; //сборс стилей
+@import "fonts"; //подключаем шрифты (локально)
+
+//подключаем БЭМ блоки
+@import "blocks/header";
+@import "blocks/about";
+@import "blocks/services";
+@import "blocks/faq";
+@import "blocks/footer";
+
+//подключаем адаптивы
+@import "adaptives/laptop";
+@import "adaptives/tablet";
+@import "adaptives/minitablet";
+@import "adaptives/phone";

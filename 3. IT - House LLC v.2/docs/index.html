@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- подключаем meta, title, css -->
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IT-House LLC</title>
+<link rel="shortcut icon" href="img/logo.png" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Montserrat:wght@400;700;900&display=swap"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+  </head>
+  <body>
+    <!-- HEADER -->
+    <!-- First screen -->
+<header id="header" class="header">
+  <div class="container">
+    <!-- Navigation -->
+    <nav class="nav">
+      <!-- Company logo and slogan -->
+      <div class="company">
+        <img src="img/weblogo.png" alt="logo" />
+        <div class="losung">
+          <h6>IT - House</h6>
+          <p>Provide digital solutions for your needs</p>
+        </div>
+
+        <!-- Navigation list -->
+        <ul class="nav-bar">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+
+        <!-- 0 - 992px screen Navigation-->
+        <div class="tablet-992px">
+          <a href="tel: +998 97 423 81 15">+ 998 97 423 81 15</a>
+
+          <!-- User SVG -->
+          <svg display="none">
+            <symbol id="user" viewBox="0 0 35 35">
+              <path
+                d="M32.2237 22.2176C31.0637 21.1983 29.657 20.3177 28.0423 19.6002C27.352 19.2936 26.5443 19.6045 26.2377 20.2945C25.9312 20.9845 26.242 21.7922 26.932 22.099C28.2936 22.7041 29.4669 23.435 30.4189 24.2716C31.5924 25.3028 32.2656 26.7961 32.2656 28.3691V30.8984C32.2656 31.6523 31.6523 32.2656 30.8984 32.2656H4.10156C3.34774 32.2656 2.73438 31.6523 2.73438 30.8984V28.3691C2.73438 26.7961 3.40755 25.3028 4.58115 24.2716C5.96249 23.0577 9.98714 20.2344 17.5 20.2344C23.0785 20.2344 27.6172 15.6957 27.6172 10.1172C27.6172 4.53869 23.0785 0 17.5 0C11.9215 0 7.38281 4.53869 7.38281 10.1172C7.38281 13.3784 8.93425 16.2837 11.3375 18.135C6.94008 19.1016 4.20464 20.9623 2.7763 22.2176C1.01204 23.7677 0 26.0097 0 28.3691V30.8984C0 33.1602 1.83983 35 4.10156 35H30.8984C33.1602 35 35 33.1602 35 30.8984V28.3691C35 26.0097 33.988 23.7677 32.2237 22.2176ZM10.1172 10.1172C10.1172 6.04633 13.4291 2.73438 17.5 2.73438C21.5709 2.73438 24.8828 6.04633 24.8828 10.1172C24.8828 14.188 21.5709 17.5 17.5 17.5C13.4291 17.5 10.1172 14.188 10.1172 10.1172Z"
+                fill="white"
+              />
+            </symbol>
+          </svg>
+
+          <svg class="user-svg">
+            <use xlink:href="#user"></use>
+          </svg>
+
+          <!-- Gamburger SVG -->
+          <svg display="none">
+            <symbol id="gamburger" viewBox="0 0 30 30">
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M28.8282 13.8281H8.45288C7.80565 13.8281 7.28101 14.3528 7.28101 15C7.28101 15.6472 7.80565 16.1719 8.45288 16.1719H28.8282C29.4754 16.1719 30.0001 15.6472 30.0001 15C30.0001 14.3528 29.4754 13.8281 28.8282 13.8281Z"
+                  fill="white"
+                />
+                <path
+                  d="M28.8282 5.03906H8.45288C7.80565 5.03906 7.28101 5.56371 7.28101 6.21094C7.28101 6.85816 7.80565 7.38281 8.45288 7.38281H28.8282C29.4754 7.38281 30.0001 6.85816 30.0001 6.21094C30.0001 5.56371 29.4754 5.03906 28.8282 5.03906Z"
+                  fill="white"
+                />
+                <path
+                  d="M28.8282 22.6172H8.45288C7.80565 22.6172 7.28101 23.1418 7.28101 23.7891C7.28101 24.4363 7.80565 24.9609 8.45288 24.9609H28.8282C29.4754 24.9609 30.0001 24.4363 30.0001 23.7891C30.0001 23.1418 29.4754 22.6172 28.8282 22.6172Z"
+                  fill="white"
+                />
+                <path
+                  d="M1.58203 7.79297C2.45576 7.79297 3.16406 7.08467 3.16406 6.21094C3.16406 5.33721 2.45576 4.62891 1.58203 4.62891C0.7083 4.62891 0 5.33721 0 6.21094C0 7.08467 0.7083 7.79297 1.58203 7.79297Z"
+                  fill="white"
+                />
+                <path
+                  d="M1.58203 16.582C2.45576 16.582 3.16406 15.8737 3.16406 15C3.16406 14.1263 2.45576 13.418 1.58203 13.418C0.7083 13.418 0 14.1263 0 15C0 15.8737 0.7083 16.582 1.58203 16.582Z"
+                  fill="white"
+                />
+                <path
+                  d="M1.58203 25.3711C2.45576 25.3711 3.16406 24.6628 3.16406 23.7891C3.16406 22.9153 2.45576 22.207 1.58203 22.207C0.7083 22.207 0 22.9153 0 23.7891C0 24.6628 0.7083 25.3711 1.58203 25.3711Z"
+                  fill="white"
+                />
+              </g>
+            </symbol>
+          </svg>
+
+          <svg class="gamburger-svg">
+            <use xlink:href="#gamburger"></use>
+          </svg>
+        </div>
+
+        <!-- Login | Register Buttons -->
+        <div class="buttons">
+          <!-- Log in -->
+          <button type="submit" class="btn-login">Log in</button>
+
+          <!-- Register -->
+          <button type="button" class="btn-reg">Register</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Info -->
+    <div class="header-info">
+      <div class="info-text">
+        <h1 class="company-name">IT - House</h1>
+        <p class="company-info">
+          Specialists in digital sphere are those who with pleasure simplify
+          your tasks with smart, stylish and resourceful approach
+        </p>
+        <button class="info-btn">
+          <a href="#services">More information</a>
+        </button>
+      </div>
+
+      <!-- Images -->
+      <div class="info-gallery">
+        <img src="img/info1.png" alt="img" class="gal-1" />
+        <img src="img/info2.png" alt="img" class="gal-2" />
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <!-- ABOUT SECTION -->
+    <!-- About section -->
+<section id="about" class="about">
+  <div class="container">
+    <h3 class="section-title">About Us</h3>
+
+    <!-- Images and titles -->
+    <div class="about-gallery">
+      <!-- 1 -->
+      <div class="border">
+        <div class="about-img-1">
+          <img src="img/about1.png" alt="mobile" />
+          <p>
+            Instant replies to our customers about for their questions related
+            to the project
+          </p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="border">
+        <div class="about-img-2">
+          <img src="img/about2.png" alt="statistics" />
+          <p>Individual and analytical approach to each customer</p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="border">
+        <div class="about-img-3">
+          <img src="img/about3.png" alt="calendar" />
+          <p>
+            Tracking system to inveglate the compeletion progress of the work
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- SERVICES SECTION -->
+    <!-- Service Section -->
+<section class="services" id="services">
+  <img src="img/service.png" class="serv-bg" alt="" />
+  <div class="container">
+    <!-- Service navigation -->
+    <div class="service-list">
+      <h3>Our Service</h3>
+      <ul class="serv-bar">
+        <li class="active-list">All</li>
+        <li>Mobile Development</li>
+        <li>Graphic Design</li>
+        <li>SMM</li>
+        <li>Web Development</li>
+        <li>Motion Design</li>
+      </ul>
+    </div>
+
+    <!-- List of Services -->
+
+    <!-- Filter services -->
+    <!-- First Block -->
+    <div class="service-items">
+      <!-- 1 -->
+      <div class="item">
+        <img src="img/service1.png" class="item-1" alt="" />
+        <p>Android Development</p>
+      </div>
+
+      <!-- 2 -->
+      <div class="item">
+        <img src="img/service2.png" class="item-2" alt="" />
+        <p>Architectural design</p>
+      </div>
+
+      <!-- 3 -->
+      <div class="item">
+        <img src="img/service3.png" class="item-3" alt="" />
+        <p>Setting up Ads</p>
+      </div>
+
+      <!-- 4 -->
+      <div class="item">
+        <img src="img/service4.png" class="item-4" alt="" />
+        <p>Selection of a CMS system</p>
+      </div>
+    </div>
+
+    <!-- Second Block -->
+    <div class="service-items">
+      <!-- 5 -->
+      <div class="item">
+        <img src="img/service5.png" class="item-5" alt="" />
+        <p>Content maker</p>
+      </div>
+
+      <!-- 6 -->
+      <div class="item">
+        <img src="img/service6.png" class="item-6" alt="" />
+        <p>Identifying the target audience</p>
+      </div>
+
+      <!-- 7 -->
+      <div class="item">
+        <img src="img/service7.png" class="item-7" alt="" />
+        <p>Art designer</p>
+      </div>
+
+      <!-- 8 -->
+      <div class="item">
+        <img src="img/service8.png" class="item-8" alt="" />
+        <p>Presentation maker</p>
+      </div>
+    </div>
+
+    <!-- Button for more -->
+    <div class="serv-btn">
+      <button><a href="#alloffers">View More</a></button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- FAQ SECTION -->
+    <!-- Frequently asked questions -->
+<section class="faq" id="faq">
+  <div class="faq-imgs">
+    <img src="img/faq1.png" class="faq-img-1" alt="" />
+    <img src="img/faq2.png" class="faq-img-2" alt="" />
+  </div>
+
+  <!-- Questions column -->
+  <div class="faq-block">
+    <h3>Frequently Asked Questions</h3>
+
+    <div class="faq-ques">
+      <div class="que-1">
+        <p class="que">What payment methods are available?<img src="img/faq3.png" class="down-mark"></img></p>
+      </div>
+      <div class="que-2">
+        <p class="que">What are the payment for each service?<img src="img/faq3.png" class="down-mark"></img></p>
+      </div>
+      <div class="que-3">
+        <p class="que">How long will each service take?<img src="img/faq3.png" class="down-mark"></img></p>
+      </div>
+      <div class="que-4">
+        <p class="que">Will technical support be available if fixes are needed?<img src="img/faq3.png" class="down-mark"></img></p>
+      </div>
+      <div class="que-5">
+        <p class="que">Will there be bonuses or discounts when you re-order the service?<img src="img/faq3.png" class="down-mark" alt=""></img></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ Button for more relevant questions -->
+  <div class="faq-btn">
+    <button><a href="#alloffers">All Questions</a></button>
+  </div>
+</section>
+
+    <!-- FOOTER -->
+    <!-- Contacts and Additional info section -->
+<footer id="footer" class="footer">
+  <div class="container">
+
+    <!-- Navigation -->
+    <nav class="nav">
+
+      <!-- Company logo and slogan -->
+      <div class="company" id="contacts">
+        <img src="img/weblogo.png" alt="logo" />
+        <div class="losung">
+          <h6>IT - House</h6>
+          <p>Provide digital solutions for your needs</p>
+        </div>
+      </div>
+    </nav>
+    <div class="information">
+      <div class="contacts">
+        <h3>Contacts</h3>
+
+        <ul>
+          <li>Address: Tashkent, Uzbekistan </li>
+          <li>Phone: <a href="tel: + 998 97 423 81 15">+ 998 97 423 81 15</a></li>
+          <li>Email: <a href="mailto: khusanov.it.tech@gmail.com">khusanov.it.tech@gmail.com</a></li>
+          <li>Working hours: Moday - Friday, 10am - 6pm </li>
+          <li>Social Media: 
+
+            <!-- Links to creator profiles -->
+            <span class="urls">
+              <a href="https://t.me/khusanov_m_r"><img src="img/telegram.png" alt="telegram"></a>
+              <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+              <a href="https://www.linkedin.com/in/mukhammadkhojiakbar-khusanov/"><img src="img/linkedin.png" alt="linkedin"></a>
+              <a href="#"><img src="img/behance.png" alt="behance"></a>
+              <a href="https://www.instagram.com/khusanov.m.r/"><img src="img/instagram.png" alt="instagram"></a>
+              <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+              <a href="https://github.com/khusanov-m"><img src="img/github.png" alt="github"></a>
+              <a href="#"><img src="img/pinterest.png" alt="pinterest"></a>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Navigation list  -->
+      <div class="info">
+        <h3>Info</h3>
+
+        <ul class="nav-bar">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#footer">Contacts</a></li>
+        </ul>
+      </div>
+
+      <!-- Map -->
+      <div class="location">
+        <h3 class="title">Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.0865982933888!2d69.28119061568438!3d41.306979679271585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ad59297d1cf%3A0xda0402847aed7b96!2sWestminster%20International%20University%20in%20Tashkent!5e0!3m2!1sen!2s!4v1618802263725!5m2!1sen!2s" allowfullscreen="" class="map" loading="lazy"></iframe>
+        <a href="#header"><img src="../img/btn.png" alt="" class="footer-btn"></a>
+      </div>
+      <img src="img/footer2.png" alt="author" class="author">
+    </div>
+    <p class="credentials">© Copyright 2021 IT House
+      Designed and Built by <a href="https://khusanov-m-r.netlify.app/" target="_blank">Mukhammad Khojiakbar Khusanov</a></p>
+  </div>
+</footer>
+
+    <!-- подключаем js -->
+    <!-- JS Swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+
+<!-- jQuery File -->
+<script src="js/jquery-3.5.1.min.js"></script>
+
+<!-- Font Awesome -->
+<script
+  src="https://kit.fontawesome.com/b12524fe9e.js"
+  crossorigin="anonymous"
+></script>
+
+<!-- Main JS file -->
+<script src="js/main.js"></script>
+
+  </body>
+</html>

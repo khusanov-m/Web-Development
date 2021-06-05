@@ -1,0 +1,49 @@
+/* Responsive */
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+  // Header
+  .header {
+    height: 70vh;
+  }
+
+  .header-info {
+    margin-top: 80px;
+    justify-content: center;
+  }
+
+  .info-gallery {
+    margin-top: 0px;
+  }
+
+  .gal-1 {
+    width: 279px;
+    height: 248px;
+  }
+  .gal-2 {
+    width: 320px;
+    height: 285px;
+  }
+
+  // Services
+  .serv-bg {
+    width: 400px;
+    top: 1350px;
+  }
+
+  .serv-bar li:last-child {
+    color: $primary;
+  }
+
+  // Faq
+  .faq-img-1 {
+    width: 344px - 50px;
+    height: 237px - 50px;
+  }
+
+  .faq-img-2 {
+    width: 523px - 50px;
+    height: 336px - 50px;
+    margin-top: 400px;
+  }
+}

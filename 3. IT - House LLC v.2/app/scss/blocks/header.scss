@@ -1,0 +1,192 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-style: 15px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+// Header Styling
+
+.header {
+  background: url("../img/header.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+// Navigation Section Styling
+
+.company {
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+
+  img {
+    width: 70px;
+    height: 60px;
+    margin-right: 15px;
+  }
+}
+
+.losung {
+  h6 {
+    font-family: $mont;
+    font-weight: 900;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: $title;
+    line-height: 16px;
+    margin-bottom: 6px;
+  }
+
+  p {
+    font-family: $domine;
+    font-weight: 700;
+    font-size: 12px;
+    color: $info;
+    max-width: 144px;
+    line-height: 14px;
+  }
+}
+
+.nav-bar {
+  margin-left: 74px;
+  display: flex;
+
+  a {
+    color: $info;
+  }
+
+  li {
+    display: inline;
+    margin-right: 50px;
+    font-family: $domine;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+// Buttons of nav-bar
+
+button {
+  cursor: pointer;
+}
+
+.btn-login,
+.btn-reg {
+  @extend %mont-bold;
+  border: 0px;
+  z-index: 1;
+  width: 130px;
+  height: 40px;
+  border-radius: 25px;
+  color: $info;
+  position: relative;
+}
+
+.btn-login {
+  margin: 0px 30px 0px 50px;
+  background: linear-gradient(180deg, #4158d0 -97.5%, #c850c0 192.5%);
+
+  &:hover {
+    background: linear-gradient(180deg, #4159d0e8 -97.5%, #c850c0f1 192.5%);
+  }
+}
+
+.btn-reg {
+  background: linear-gradient(
+    92.83deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 103.14%
+  );
+  box-shadow: inset -5px -5px 4px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 4px rgba(255, 255, 255, 0.1);
+  filter: drop-shadow(20px 30px 100px rgba(0, 0, 0, 0.05));
+
+  &:hover {
+    background: linear-gradient(
+      92.83deg,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0) 103.14%
+    );
+    box-shadow: inset -5px -5px 4px rgba(255, 255, 255, 0.15),
+      inset 5px 5px 4px rgba(255, 255, 255, 0.15);
+    filter: drop-shadow(20px 30px 100px rgba(0, 0, 0, 0.05));
+  }
+}
+
+.header-info {
+  margin-top: 230px;
+  display: flex;
+}
+
+.company-name {
+  color: $title;
+  font-family: $mont;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 61px;
+  margin-bottom: 30px;
+}
+
+.company-info {
+  color: $info;
+  font-family: $domine;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  max-width: 405px;
+}
+
+.info-btn {
+  @extend %mont-bold;
+  width: 270px;
+  height: 59px;
+  background: linear-gradient(
+    92.83deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 103.14%
+  );
+  box-shadow: inset -5px -5px 4px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 4px rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  border: solid 1px $info;
+  margin-top: 40px;
+
+  a {
+    color: $info;
+  }
+}
+
+.info-gallery {
+  margin: -120px 0 0 90px;
+}
+
+.gal-1 {
+  width: 329px;
+  height: 298px;
+}
+
+.gal-2 {
+  width: 370px;
+  height: 335px;
+  display: block;
+  margin-top: -150px;
+  margin-left: 310px;
+}
+
+// Display none
+
+.tablet-992px {
+  display: none;
+}
