@@ -1,17 +1,14 @@
-# All websites are included in seperate folders
-
 ## Notice that no one is allowed to use for commercial purpose included files
 
-<<<<<<< HEAD
-New updates 25.05.2021
-=======
+**Instructions**
+
 To open and see websites, please follow steps below:
 1. Download repository
 2. Open folder with website name
 3. Proceed to *docs* folder
 4. Launch *index.html*
 
-Chronology
+**Chronology of repository**
 
 New updates: 10.05.2021
 ---
@@ -22,7 +19,6 @@ New updates: 10.05.2021
 - Comments in each file
 
 Date: 25.05.2021
->>>>>>> main
 ---
 *[Tours](https://tours-khusanov-m-r.netlify.app/)* - Designed [Creative People](https://dribbble.com/CreativePeoples) and Built by Mukhammad Khojiakbar Khusanov
 
