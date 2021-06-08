@@ -1,0 +1,135 @@
+// Service Section Styling
+
+.services {
+  margin-bottom: 100px;
+}
+
+.service-list {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+
+  h3 {
+    float: left;
+    padding: 0;
+  }
+}
+
+.serv-bg {
+  position: absolute;
+  right: 0;
+  top: 1420px;
+}
+
+.serv-bar {
+  margin-left: 115px;
+  li {
+    @extend %domine-regular;
+    display: inline;
+    margin-right: 50px;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  li:last-child {
+    color: $info;
+  }
+}
+
+.service-items {
+  position: relative;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 50px;
+  display: flex;
+}
+
+.item {
+  border: 1px solid $primary;
+  border-radius: 5px;
+  width: 270px;
+  height: 270px;
+
+  p {
+    color: $primary;
+    font-family: $domine;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.item-1,
+.item-2,
+.item-4,
+.item-5,
+.item-6,
+.item-7 {
+  padding-top: 30px;
+}
+
+.item-3 {
+  padding-top: 26px;
+
+  & + p {
+    margin-top: 15px;
+  }
+}
+
+.item-8 {
+  padding-top: 45px;
+}
+
+.item-4 + p {
+  color: $info;
+}
+
+.item-1 + p,
+.item-5 + p {
+  margin-top: 30px;
+}
+
+.item-2 + p,
+.item-4 + p {
+  margin-top: 27px;
+}
+
+.item-6 + p {
+  margin-top: 29px;
+}
+
+.item-7 + p {
+  margin-top: 23px;
+}
+
+.item-8 + p {
+  margin-top: 38px;
+}
+
+.serv-btn,
+.faq-btn {
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+
+  button {
+    @extend %mont-bold;
+    width: 170px;
+    height: 50px;
+    border: 0px;
+    color: $primary;
+    background: linear-gradient(94.94deg, #8bc6ec 0%, #9599e2 100%);
+    border-radius: 5px;
+    z-index: 1;
+    position: relative;
+
+    a {
+      color: $primary;
+    }
+  }
+}

@@ -2,7 +2,27 @@
 
 ## Notice that no one is allowed to use for commercial purpose included files
 
+<<<<<<< HEAD
 New updates 25.05.2021
+=======
+To open and see websites, please follow steps below:
+1. Download repository
+2. Open folder with website name
+3. Proceed to *docs* folder
+4. Launch *index.html*
+
+Chronology
+
+New updates: 10.05.2021
+---
+*[IT - House LLC v.2](https://it-house-llc.netlify.app/)* - Designed and Built by Mukhammad Khojiakbar Khusanov
+
+- Several device versions available
+- Gulp collector used
+- Comments in each file
+
+Date: 25.05.2021
+>>>>>>> main
 ---
 *[Tours](https://tours-khusanov-m-r.netlify.app/)* - Designed [Creative People](https://dribbble.com/CreativePeoples) and Built by Mukhammad Khojiakbar Khusanov
 

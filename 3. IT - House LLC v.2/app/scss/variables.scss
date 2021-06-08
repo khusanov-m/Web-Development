@@ -1,0 +1,36 @@
+//bacgrounds
+// $body-bg: ;
+
+//fonts
+// $basic-family: , sans-serif;
+
+// Variables
+$primary: #000050;
+$info: #fff;
+$title: #ffcc70;
+$mont: "Montserrat", sans-serif;
+$domine: "Domine", serif;
+
+// Selectors
+%section-title {
+  font-family: $mont;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 30px;
+  color: $title;
+}
+
+%domine-regular {
+  color: $primary;
+  font-family: $domine;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+%mont-bold {
+  font-family: $mont;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}

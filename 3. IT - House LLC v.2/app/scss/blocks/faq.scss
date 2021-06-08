@@ -1,0 +1,81 @@
+// Frequently Asked Questions Styling
+
+.faq {
+  padding-top: 50px;
+  position: relative;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.faq-img-1 {
+  width: 344px;
+  height: 237px;
+  float: left;
+  position: absolute;
+  left: 0;
+}
+
+.faq-img-2 {
+  width: 523px;
+  height: 336px;
+  margin-top: 280px;
+  float: right;
+  position: absolute;
+  right: 0;
+}
+
+.faq-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+
+  h3 {
+    padding: 0;
+    position: absolute;
+  }
+}
+
+.faq-ques {
+  margin-top: 80px;
+}
+
+.down-mark {
+  float: right;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.que {
+  margin-bottom: 30px;
+  border-bottom: 1px solid $primary;
+  width: 570px;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+// For JS purposes
+
+// .que-1 {
+// }
+// .que-2 {
+// }
+// .que-3 {
+// }
+// .que-4 {
+// }
+// .que-5 {
+// }
+
+.que {
+  @extend %domine-regular;
+}
+
+.faq-btn {
+  align-items: center;
+
+  .faq-btn-bg {
+    left: 772px;
+  }
+}
