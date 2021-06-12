@@ -18,11 +18,11 @@
   &__content {
     @include absCenter;
 
-    width: 75%;
+    width: 78%;
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
     border-radius: 3px;
-    display: table;
+    // display: table;
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
@@ -89,6 +89,29 @@
     }
   }
 
+  @include respond(mini-desktop) {
+    &__content {
+      width: 89%;
+    }
+  }
+
+  @include respond(tab-land) {
+    &__left {
+      display: flex;
+      width: 100%;
+    }
+
+    &__right {
+      width: 100%;
+      display: block;
+    }
+
+    &__img {
+      width: 50%;
+      margin-bottom: 1.2rem;
+    }
+  }
+
   @include respond(tab-port) {
     &__left {
       display: flex;
@@ -111,20 +134,11 @@
     }
   }
 
-  @include respond(tab-land) {
-    &__left {
-      display: flex;
-      width: 100%;
-    }
+  
 
-    &__right {
-      width: 100%;
-      display: block;
-    }
-
-    &__img {
-      width: 50%;
-      margin-bottom: 1.2rem;
-    }
-  }
+  // @include respond(big-desktop) {
+  //   &__content {
+  //     width: 80%;
+  //   }
+  // }
 }
