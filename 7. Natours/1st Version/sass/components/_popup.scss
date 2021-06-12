@@ -90,10 +90,6 @@
   }
 
   @include respond(tab-port) {
-    &__content {
-      // display: flex;
-    }
-
     &__left {
       display: flex;
       width: 100%;
