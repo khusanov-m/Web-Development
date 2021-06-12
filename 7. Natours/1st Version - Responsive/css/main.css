@@ -824,6 +824,21 @@ body {
   }
 }
 
+@media (max-width: 75em) {
+  .popup__left {
+    display: flex;
+    width: 100%;
+  }
+  .popup__right {
+    width: 100%;
+    display: block;
+  }
+  .popup__img {
+    width: 50%;
+    margin-bottom: 1.2rem;
+  }
+}
+
 .story {
   width: 75%;
   margin: 0 auto;
@@ -1294,7 +1309,6 @@ body {
 .section-tours {
   background-color: #f7f7f7;
   padding: 10rem 0 15rem 0;
-  margin-top: -10rem;
 }
 
 @media (max-width: 56.25em) {
