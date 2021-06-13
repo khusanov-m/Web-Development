@@ -34,7 +34,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 
 @mixin respond($breakpoint) {
-
   @if $breakpoint == big-desktop {
     @media (min-width: 112.5em) {
       @content;
@@ -42,7 +41,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 
   @if $breakpoint == mini-desktop {
-    @media (max-width: 87.5em) {
+    @media (max-width: 100em) {
       @content;
     } // 1400px
   }
