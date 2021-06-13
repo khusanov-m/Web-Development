@@ -23,7 +23,7 @@ _[Natours](https://natours-khusanov-m-r.netlify.app/)_ - Designed by Jonas Schme
 - Pop up effects built only in CSS
 
 1st - Fully Responsive and Adaptable
-2nd - Optimised images for Mobile devices and Tablets
+2nd - Images optimised for Mobile devices and Tablets
 
 ## Date: 10.05.2021
 
