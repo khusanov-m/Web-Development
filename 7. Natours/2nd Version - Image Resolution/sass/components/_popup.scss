@@ -9,6 +9,8 @@
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 
   &:target {
     opacity: 1;
