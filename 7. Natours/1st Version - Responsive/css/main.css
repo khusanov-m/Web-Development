@@ -618,7 +618,7 @@ body {
   font-weight: 100;
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
   .card {
     height: auto;
     -webkit-border-radius: 3px;
