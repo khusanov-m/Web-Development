@@ -34,16 +34,16 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media (max-width: 37.5em) {
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
       @content;
-    } // 600px
+    } // 1800px
   }
 
-  @if $breakpoint == tab-port {
-    @media (max-width: 56.25em) {
+  @if $breakpoint == mini-desktop {
+    @media (max-width: 100em) {
       @content;
-    } // 900px
+    } // 1400px
   }
 
   @if $breakpoint == tab-land {
@@ -52,9 +52,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
     } // 1200px
   }
 
-  @if $breakpoint == big-desktop {
-    @media (min-width: 112.5em) {
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
       @content;
-    } // 1800px
+    } // 900px
+  }
+
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    } // 600px
   }
 }
