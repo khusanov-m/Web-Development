@@ -805,9 +805,15 @@ body {
   color: #55c57a;
 }
 
-@media (max-width: 87.5em) {
-  .popup__content {
-    width: 89%;
+@media (min-width: 112.5em) {
+  .popup__img {
+    display: block;
+  }
+}
+
+@media (max-width: 100em) {
+  .popup__img {
+    display: none;
   }
 }
 
@@ -823,6 +829,7 @@ body {
   .popup__img {
     width: 50%;
     margin-bottom: 1.2rem;
+    display: block;
   }
 }
 
@@ -838,6 +845,7 @@ body {
   .popup__img {
     width: 50%;
     margin-bottom: 1.2rem;
+    display: block;
   }
   .popup__text {
     font-size: 1.2rem;
