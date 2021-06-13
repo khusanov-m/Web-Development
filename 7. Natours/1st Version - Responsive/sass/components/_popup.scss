@@ -89,9 +89,15 @@
     }
   }
 
+  @include respond(big-desktop) {
+    &__img {
+      display: block;
+    }
+  }
+
   @include respond(mini-desktop) {
-    &__content {
-      width: 89%;
+    &__img {
+      display: none;
     }
   }
 
@@ -109,6 +115,7 @@
     &__img {
       width: 50%;
       margin-bottom: 1.2rem;
+      display: block;
     }
   }
 
@@ -116,7 +123,6 @@
     &__left {
       display: flex;
       width: 100%;
-
     }
 
     &__right {
@@ -127,18 +133,11 @@
     &__img {
       width: 50%;
       margin-bottom: 1.2rem;
+      display: block;
     }
 
     &__text {
       font-size: 1.2rem;
     }
   }
-
-  
-
-  // @include respond(big-desktop) {
-  //   &__content {
-  //     width: 80%;
-  //   }
-  // }
 }
