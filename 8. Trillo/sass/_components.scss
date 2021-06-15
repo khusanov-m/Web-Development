@@ -15,6 +15,12 @@
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: $bp-smallest) {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
+  }
+
   &__input {
     font-family: inherit;
     font-size: inherit;
@@ -27,10 +33,19 @@
     transition: all 0.2s;
     margin-right: -3.5rem;
 
+    @media only screen and (max-width: $bp-smallest) {
+      margin-right: -5.5rem;
+      width: 80%;
+    }
+
     &:focus {
       outline: none;
       width: 100%;
       background-color: var(--color-grey-light-3);
+
+      @media only screen and (max-width: $bp-smallest) {
+        width: 90%;
+      }
     }
 
     &::-webkit-input-placeholder {
@@ -184,6 +199,11 @@
       justify-content: center;
       padding: 2rem;
     }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      padding: 1.5rem 0.5rem;
+    }
   }
 
   &__icon {
@@ -191,6 +211,13 @@
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 0;
+      margin-bottom: 0.7rem;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 }
 
@@ -227,13 +254,18 @@
   display: flex;
   align-items: center;
   border-bottom: var(--line);
-  
+
   &__heading {
     font-size: 2.25rem;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+      padding: 1.25rem 2rem;
+    }
   }
 
   &__stars {
@@ -255,7 +287,7 @@
   }
 
   &__icon-location {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 
   &__rating {
@@ -269,17 +301,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 1.5rem;
+    }
   }
 
   &__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -3px;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+    }
   }
 
   &__rating-count {
     font-size: 0.8rem;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 0.5rem;
+    }
   }
 }
 
@@ -294,11 +338,11 @@
   display: inline-block;
   background-color: transparent;
   cursor: pointer;
-  transition: all .2s;
+  transition: all 0.2s;
 
   & span {
     margin-left: 3px;
-    transition: margin-left .2s;
+    transition: margin-left 0.2s;
   }
 
   &:hover {
@@ -323,7 +367,7 @@
 
   50% {
     transform: scale(1.05);
-    box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
   }
 
   100% {
@@ -338,7 +382,6 @@
 .paragraph:not(:last-of-type) {
   margin-bottom: 2rem;
 }
-
 
 //////////////////////////////////////////
 // LIST
@@ -365,15 +408,19 @@
     width: 1rem;
     margin-right: 0.7rem;
 
-    // background-image: url(../img/chevron-thin-right.svg);
-    // background-size: cover;
+    // Old browser
+    background-image: url(../img/chevron-thin-right.svg);
+    background-size: cover;
 
-    // newer browsers - masks
-    background-color: var(--color-primary);
-    -webkit-mask-image: url(../img/chevron-thin-right.svg);
-    -webkit-mask-size: cover;
-    mask-image: url(../img/chevron-thin-right.svg);
-    mask-size: cover;
+    // Newer browsers - masks
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      background-color: var(--color-primary);
+      -webkit-mask-image: url(../img/chevron-thin-right.svg);
+      -webkit-mask-size: cover;
+      mask-image: url(../img/chevron-thin-right.svg);
+      mask-size: cover;
+      background-image: none;
+    }
   }
 }
 
@@ -386,7 +433,6 @@
 
   display: flex;
   align-items: center;
-  
 
   &__count {
     margin-right: auto;
@@ -453,7 +499,7 @@
     text-transform: uppercase;
     margin-bottom: 0.4rem;
   }
-  
+
   &__user-date {
     font-size: 1rem;
     color: var(--color-grey-dark-3);
@@ -506,7 +552,11 @@
   text-transform: uppercase;
   border-radius: 100px;
   border: 0;
-  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -516,7 +566,7 @@
     display: inline-block;
     height: 100%;
     width: 100%;
-    transition: all .2s;
+    transition: all 0.2s;
   }
 
   &__visible {
@@ -525,14 +575,17 @@
 
   &__invisible {
     position: absolute;
-    padding: 2rem 0; 
+    padding: 2rem 0;
     left: 0;
     top: -100%;
-    
   }
 
   &:hover {
-    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+    background-image: linear-gradient(
+      to left,
+      var(--color-primary-light),
+      var(--color-primary-dark)
+    );
   }
 
   &:hover &__visible {
