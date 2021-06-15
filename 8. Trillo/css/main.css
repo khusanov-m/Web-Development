@@ -112,6 +112,7 @@ body {
 }
 
 .detail {
+  font-size: 1.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -122,7 +123,6 @@ body {
 }
 
 .description {
-  font-size: 1.4rem;
   background-color: #fff;
   -webkit-box-shadow: var(--shadow-light);
           box-shadow: var(--shadow-light);
@@ -139,6 +139,19 @@ body {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
@@ -479,8 +492,19 @@ body {
   transition: all .2s;
 }
 
+.btn-inline span {
+  margin-left: 3px;
+  -webkit-transition: margin-left .2s;
+  -o-transition: margin-left .2s;
+  transition: margin-left .2s;
+}
+
 .btn-inline:hover {
   color: var(--color-grey-dark-1);
+}
+
+.btn-inline:hover span {
+  margin-left: 8px;
 }
 
 .btn-inline:focus {
@@ -600,4 +624,145 @@ body {
 
 .recommend__photo:not(:last-child) {
   margin-right: -1.5rem;
+}
+
+.review {
+  background-color: #fff;
+  -webkit-box-shadow: var(--shadow-light);
+          box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.review__text {
+  margin-bottom: 2rem;
+  z-index: 10;
+  position: relative;
+}
+
+.review__user {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review__photo {
+  height: 4.5rem;
+  width: 4.5rem;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+.review__user-box {
+  margin-right: auto;
+}
+
+.review__user-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.review__user-date {
+  font-size: 1rem;
+  color: var(--color-grey-dark-3);
+}
+
+.review__rating {
+  color: var(--color-primary);
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+.review::before {
+  content: "\201C";
+  position: absolute;
+  top: -2.75rem;
+  left: -1rem;
+  line-height: 1;
+  font-size: 20rem;
+  color: var(--color-grey-light-2);
+  font-family: sans-serif;
+  z-index: 1;
+}
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+}
+
+.cta__book-now {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.btn {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
+  border: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color-primary-light)), to(var(--color-primary-dark)));
+  background-image: -webkit-linear-gradient(left, var(--color-primary-light), var(--color-primary-dark));
+  background-image: -o-linear-gradient(left, var(--color-primary-light), var(--color-primary-dark));
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn > * {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn__visible {
+  padding: 2rem 7.5rem;
+}
+
+.btn__invisible {
+  position: absolute;
+  padding: 2rem 0;
+  left: 0;
+  top: -100%;
+}
+
+.btn:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(var(--color-primary-light)), to(var(--color-primary-dark)));
+  background-image: -webkit-linear-gradient(right, var(--color-primary-light), var(--color-primary-dark));
+  background-image: -o-linear-gradient(right, var(--color-primary-light), var(--color-primary-dark));
+  background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+}
+
+.btn:hover .btn__visible {
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.btn:hover .btn__invisible {
+  top: 0;
+}
+
+.btn:focus {
+  outline: none;
+  -webkit-animation: pulsate 1s infinite;
+          animation: pulsate 1s infinite;
 }
