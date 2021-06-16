@@ -61,6 +61,8 @@ _[Tours](https://tours-khusanov-m-r.netlify.app/)_ - Designed [Creative People](
 
 - Website of Tourism Agency
 - Booking and Searching elements
+- Gorgeous design
+
 
 ## Date: 25.05.2021
 
@@ -78,7 +80,8 @@ _[Oppi-App](https://oppai.netlify.app/)_ - Designed by [WAYUP](https://wayup.in/
 
 - Social Media simple website
 - Several sections about program
-- JS features like slider, parallax and form validate
+- JS features: slider, parallax and form validate
+- Pleasant design
 
 ## Date: 10.05.2021
 
