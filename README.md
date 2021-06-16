@@ -11,9 +11,20 @@ To open and see websites, please follow steps below:
 
 **Chronology of repository**
 
-## New updates: 15.06.2021
 
-_[Trillo](https://trillo-khusanov-m-r.netlify.app/)_ - Designed by Jonas Schmedtmann and Built by Mukhammad Khojiakbar Khusanov
+## New updates: 16.06.2021
+
+_[Nexter](https://nexter-khusanov-m-r.netlify.app/)_ - Designed by [Jonas Schmedtmann](https://codingheroes.io/) and Built by Mukhammad Khojiakbar Khusanov
+
+- Combined Flexbox and Grid layouts
+- _max-content_ and _min-content_ properties
+- _minmax_ & _calc_ functions
+- Responsive design with grids
+- BEM technology structre
+
+## Date: 15.06.2021
+
+_[Trillo](https://trillo-khusanov-m-r.netlify.app/)_ - Designed by [Jonas Schmedtmann](https://codingheroes.io/) and Built by Mukhammad Khojiakbar Khusanov
 
 - Power of Flexbox used
 - @supports included for mask CSS usage
@@ -23,7 +34,7 @@ _[Trillo](https://trillo-khusanov-m-r.netlify.app/)_ - Designed by Jonas Schmedt
 
 ## Date: 13.06.2021
 
-_[Natours](https://natours-khusanov-m-r.netlify.app/)_ - Designed by Jonas Schmedtmann and Built by Mukhammad Khojiakbar Khusanov
+_[Natours](https://natours-khusanov-m-r.netlify.app/)_ - Designed by [Jonas Schmedtmann](https://codingheroes.io/) and Built by Mukhammad Khojiakbar Khusanov
 
 - Modern CSS usage with help of SCSS preproccesor
 - Grid and Flexbox
