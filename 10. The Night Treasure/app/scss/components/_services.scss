@@ -1,0 +1,139 @@
+.services {
+  margin: 6.5rem 0 0 8rem;
+  padding-top: 8.5rem;
+}
+
+.service {
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.96rem;
+    color: $color-primary;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    max-width: 45rem;
+    margin-bottom: 15rem;
+  }
+
+  &__intro {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .btn {
+      position: absolute;
+      right: 8rem;
+      bottom: 15rem;
+      a {
+        color: $color-white-1;
+      }
+
+      &::before {
+        left: 4.4rem;
+      }
+    }
+  }
+}
+
+.perfumes {
+  position: relative;
+}
+
+.perfume {
+  display: flex;
+  position: absolute;
+  
+
+  &__img-1 {
+    width: 30rem;
+    height: 35rem;
+    margin-right: 5rem;
+
+  }
+
+  &__img-2 {
+    width: 30rem;
+    height: 40rem;
+    margin-right: 5rem;
+    margin-top: -4rem;
+  }
+
+  &__number {
+    font-size: 5rem;
+    font-weight: 400;
+    align-self: flex-end;
+
+
+    &-1 {
+      padding: 0 4rem 2.5rem 0;
+    }
+
+    &-2 {
+      padding: 0 4rem 3.5rem 0;
+    }
+  }
+
+  &__details {
+    top: 10%;
+    left: 100%;
+    width: 50%;
+    margin: auto 0;
+    
+  }
+
+  
+  &__title {
+    font-size: 2.6rem;
+    font-weight: 400;
+    width: max-content;
+  }
+
+  &__info {
+    color: $color-white-dark-1;
+    font-size: 1.5rem;
+    margin: 3rem 0 5rem 0;
+    line-height: 2;
+    letter-spacing: -0.016rem;
+    width: 50%;
+
+    &-2 {
+      width: 70%;
+    }
+  }
+
+  &__link {
+    font-size: 1.5rem;
+    color: $color-white-1;
+    text-decoration: none;
+    text-transform: uppercase;
+    // border-bottom: 1px solid $color-white-1;
+    line-height: 1.6;
+    width: max-content;
+    letter-spacing: 0.096rem;
+
+    display: inline-block;
+    padding-bottom: 0.3rem;
+    
+    background-image: linear-gradient($color-white-1, $color-primary-dark);
+    background-size: 0 3px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .3s ease-out;
+
+    &:hover {
+      background-size: 100% 2px, auto;
+      
+    }
+  }
+
+  &-1 {
+    left: 20rem;
+  }
+
+  &-2 {
+    left: 100rem;
+    padding-right: 20rem;
+  }
+}
