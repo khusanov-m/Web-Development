@@ -1,0 +1,6 @@
+.container {
+  max-width: 160rem;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-rows: 6vh minmax(90vh, min-content) minmax(50vh, min-content) 95vh;
+}
