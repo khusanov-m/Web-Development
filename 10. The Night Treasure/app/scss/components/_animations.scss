@@ -1,0 +1,58 @@
+@keyframes rotate {
+  0% {
+    transform: rotate( 0deg );
+  }
+
+  25% {
+    transform: rotate( 90deg );
+  }
+
+  50% {
+    transform: rotate( 180deg ) ;
+  }
+
+  75% {
+    transform: rotate( 270deg );
+  }
+
+  100% {
+    transform: rotate( 360deg );
+  }
+}
+
+@keyframes showcase {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes showcase-2 {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: .015;
+  }
+
+  50% {
+    opacity: .03;
+  }
+
+  75% {
+    opacity: .045;
+  }
+
+  100% {
+    opacity: .05;
+  }
+}
