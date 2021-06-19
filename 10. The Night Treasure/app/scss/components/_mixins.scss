@@ -1,0 +1,76 @@
+/*
+MEDIA QUERY MANAGER
+
+0 - 600px : Phone
+600 - 900 px : Tablet portrait
+900 - 1200 px : Tablet landscape
+1200 - 1800 px : Normal style
+1800 + : big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+
+// @mixin respond($breakpoint) {
+//   @if $breakpoint == big-desktop {
+//     @media only screen and (min-width: 112.5em) {
+//       @content;
+//     } // 1800px
+//   }
+
+//   @if $breakpoint == mini-desktop {
+//     @media only screen and (max-width: 100em) {
+//       @content;
+//     } // 1400px
+//   }
+
+//   @if $breakpoint == tab-land {
+//     @media only screen and (max-width: 75em) {
+//       @content;
+//     } // 1200px
+//   }
+
+//   @if $breakpoint == tab-port {
+//     @media only screen and (max-width: 56.25em) {
+//       @content;
+//     } // 900px
+//   }
+
+//   @if $breakpoint == phone {
+//     @media only screen and (max-width: 37.5em) {
+//       @content;
+//     } // 600px
+//   }
+// }
+
+
+%bg-sm-2 {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/bg-sm-2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 66rem;
+  height: 66.5rem;
+
+  animation: showcase .2s;
+}
+
+%bg-sm-3 {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/bg-sm-3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 37rem;
+  height: 37rem;
+}
