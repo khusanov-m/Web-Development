@@ -1,0 +1,148 @@
+.product {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-rows: 50vh 20vh;
+  position: relative;
+
+  margin: auto 8rem;
+
+  &__hidden {
+    font-weight: 700;
+    font-size: 30rem;
+
+    background-image: linear-gradient(
+      to bottom,
+      rgba($color-white-1, 0.06),
+      rgba(#2d1b17, 0)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    position: absolute;
+    display: block;
+    z-index: 5;
+
+    top: 14.5rem;
+    right: 10rem;
+  }
+
+  &__title {
+    line-height: 1.1;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 7.5rem;
+    max-width: 2rem;
+    letter-spacing: -0.064rem;
+    position: absolute;
+    top: 15rem;
+  }
+
+  &__img {
+    backface-visibility: hidden;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    top: 5rem;
+    right: 28rem;
+    z-index: 20;
+  }
+
+  &__details {
+    position: absolute;
+    top: 17.5rem;
+    right: 7rem;
+
+    &-text {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    &-price {
+      font-size: 3.5rem;
+      font-weight: 500;
+    }
+
+    &-rating {
+      margin-bottom: 1rem;
+
+      &__star {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      &__star:not(:last-child) {
+        fill: #e79331;
+      }
+
+      &__star:last-child {
+        fill: #2f1319;
+      }
+    }
+
+    &-volume {
+      font-size: 2rem;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    bottom: 8rem;
+
+    display: flex;
+
+    &-text {
+      font-size: 2rem;
+      font-weight: 400;
+      position: relative;
+      color: $color-white-2;
+      margin-left: 12rem;
+      max-width: 40rem;
+      line-height: 3rem;
+
+      &::before {
+        content: "";
+        height: 3px;
+        width: 8rem;
+        background-color: #c4c4c4;
+        position: absolute;
+        left: -11rem;
+        top: 1rem;
+      }
+    }
+  }
+
+  &__btn {
+    margin: 0 3rem 0 10rem;
+  }
+
+  &__offer {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &-img {
+      width: 6rem;
+      height: 6rem;
+      animation: rotate 5s infinite linear;
+      display: inline-block;
+    }
+
+    &-play {
+      position: absolute;
+      left: 53%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.2s;
+      padding: 2rem;
+
+      &:hover {
+        transform: translate(-50%, -53%);
+      }
+
+      &:active {
+        transform: translate(-50%, -47%);
+      }
+    }
+  }
+}
