@@ -1,0 +1,115 @@
+.features {
+  margin: 10rem 8rem 15rem 8rem;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.feature {
+  // 1 block
+  &__intro {
+    display: flex;
+    justify-content: space-between;
+
+    &-text {
+      font-size: 2rem;
+      color: rgba(255,255,255, .25);
+      max-width: 60rem;
+      line-height: 3.5rem;
+      letter-spacing: 0.032rem;
+      margin-top: 3rem;
+    }
+
+    .btn {
+      align-self: flex-end;
+
+      &::before {
+        left: 4.4rem;
+      }
+    }
+  }
+
+  // 2 block
+  &__cards {
+    display: flex;
+    justify-content: space-around;
+    // margin-top: 20rem;
+    margin: 20rem auto 0 auto;
+  }
+
+
+  &__card {
+    position: relative;
+    transition: all .3s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-img {
+      width: 20rem;
+      position: relative;
+      z-index: 50;
+    }
+
+    &-title {
+      text-transform: uppercase;
+      text-align: center;
+      max-width: 20rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    &-text {
+      text-align: center;
+      color: $color-grey;
+      max-width: 30rem;
+      font-size: 2rem;
+      margin-top: 3rem;
+      line-height: 1.6;
+    }
+
+    &::before, &::after {
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      @extend %bg-sm-3;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      top: 25%;
+      left: 50%;
+      z-index: 20;
+    }
+
+    &::after {
+      background: $color-white-1;
+      opacity: 0;
+      backdrop-filter: blur(288.889px);
+      border-radius: 33.3333px;
+      height: 58rem;
+      width: 40rem;
+
+      top: -10rem;
+    }
+
+    &:hover::after {
+      animation: showcase-2 .4s linear;
+      opacity: 0.05;
+    }
+
+    &:hover::before {
+      animation: showcase .2s;
+      opacity: 1;
+    }
+  }
+  
+  &__card-1 {
+    padding-top: 3rem;
+  }
+
+  &__card-3 {
+    padding-top: 3rem;
+  }
+}
