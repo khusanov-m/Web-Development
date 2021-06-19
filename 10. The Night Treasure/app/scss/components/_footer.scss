@@ -1,0 +1,135 @@
+.footer {
+  margin-top: 10rem;
+  background: rgba($color-white-1, .02);
+  backdrop-filter: blur(1111.11px);
+
+  padding: 0 25rem;
+  &__contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10rem 0 7rem 0;
+  }
+
+  &__img {
+    backface-visibility: hidden;
+    width: 12rem;
+    height: 3rem;
+    z-index: 20;
+  }
+
+  &__form {
+    display: flex;
+    position: relative;
+  }
+
+  &__input {
+    font-size: 1.8rem;   
+    color: rgba($color-white-1, 0.75); 
+    width: 45rem;
+    height: 7.5rem;
+    border: none;
+    padding: .5rem 0 0 4rem;
+
+    background: rgba($color-white-1, .03);
+    backdrop-filter: blur(333.333px);
+    border-radius: 80px;
+
+    transition: all .3s;
+
+    &::-webkit-input-placeholder {
+      color: rgba($color-white-1, 0.55);  
+      font-family: $font-primary;
+      z-index: 25;
+      font-size: 1.8rem;  
+    }
+
+    &:focus, &:active {
+      outline: none;
+      width: 60rem;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    border: none;
+    width: 16rem;
+    height: 6.2rem;
+    border-radius: 100px;
+    background-color: $color-primary-dark;
+    color: $color-white-1;
+    text-align: left;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 2.5rem;
+
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-52%);
+    }
+
+    &:active {
+      transform: translateY(-48%);
+    }
+
+    &::before {
+      content: "\27F6";
+      background-color: $color-primary-light;
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 50px;
+      position: absolute;
+
+      z-index: 100;
+      left: 80%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+  }    
+
+  &__links {
+    font-size: 2rem;
+  }
+
+  &__link {
+    transition: all .2s;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7rem;
+  }
+
+  .copyright {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+
+    a, a:link, :active {
+      text-decoration: none;
+      color: $color-white-1;
+      transition: all .2s;
+
+      &:hover {
+        color: $color-primary-dark;
+      }
+    }
+  }
+}
