@@ -1,0 +1,35 @@
+.mb-sm {
+  margin-bottom: 1.5rem;
+}
+
+.mb-md {
+  margin-bottom: 2rem;
+
+  // @include respond(tab-port) {
+  //   margin-bottom: 3rem !important;
+  // }
+}
+
+.mb-bg {
+  margin-bottom: 6.5rem;
+
+  // @include respond(tab-port) {
+  //   margin-bottom: 5rem !important;
+  // }
+}
+
+.mt-sm {
+  margin-top: 1rem;
+}
+
+.mt-md {
+  margin-top: 5rem;
+}
+
+.mt-bg {
+  margin-top: 8rem;
+}
+
+.mt-hg {
+  margin-top: 10rem;
+}
