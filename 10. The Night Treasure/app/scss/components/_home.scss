@@ -3,4 +3,12 @@
   margin: 5rem auto;
   display: grid;
   grid-template-rows: 6vh minmax(90vh, min-content) minmax(50vh, min-content) 95vh;
+
+  @include respond(big-desktop) {
+    margin: 5rem 10rem;
+  }
+
+  @include respond(desktop) {
+    margin: 5rem 8rem;
+  }
 }
