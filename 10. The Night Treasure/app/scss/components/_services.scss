@@ -1,6 +1,10 @@
 .services {
   margin: 6.5rem 0 0 8rem;
   padding-top: 8.5rem;
+
+  @include respond(tab-land) {
+    margin: 6.5rem 0 0 0rem;
+  }
 }
 
 .service {
@@ -135,5 +139,43 @@
   &-2 {
     left: 100rem;
     padding-right: 20rem;
+    overflow-x: hidden;
+  }
+
+  @include respond(desktop) {
+    &-1 {
+      left: 10rem;
+    }
+
+    &-2 {
+      left: 85rem;
+    }
+  }
+
+  @include respond(mini-desktop) {
+    &-1 {
+      left: 5rem;
+    }
+
+    &-2 {
+      left: 75rem;
+    }
+  }
+  
+  @include respond(tab-land) {
+    &-1 {
+      left: 0rem;
+    }
+
+    &-2 {
+      left: 70rem;
+    }
+  }
+
+  @include respond(tab-port-3) {
+    &__info {
+      font-size: 2rem;
+      width: 68%;
+    }
   }
 }
