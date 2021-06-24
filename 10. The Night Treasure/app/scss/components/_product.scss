@@ -1,7 +1,7 @@
 .product {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-template-rows: 50vh 20vh;
+  grid-template-rows: 50rem 20rem;
   position: relative;
 
   margin: auto 8rem;
@@ -36,6 +36,7 @@
     letter-spacing: -0.064rem;
     position: absolute;
     top: 15rem;
+    z-index: 100;
   }
 
   &__img {
@@ -52,6 +53,7 @@
     position: absolute;
     top: 17.5rem;
     right: 7rem;
+    z-index: 100;
 
     &-text {
       font-size: 2.5rem;
@@ -145,4 +147,78 @@
       }
     }
   }
+
+  @include respond(tab-land) {
+    margin: auto;
+  }
+
+  @include respond(tab-port) {
+    &__img {
+      width: 33rem;
+      height: 33rem;
+      top: 12rem;
+      right: 27rem;
+    }
+  }
+
+  @include respond(tab-port-2) {
+    &__hidden {
+      display: none;
+    }
+
+    &__img {
+      right: 19rem;
+    }
+  
+    &__details {
+      right: 3rem;
+    }
+  }
+
+  @include respond(tab-port-3) {
+    &__title {
+      font-size: 5rem;
+    }
+
+    &__img {
+      width: 25rem;
+      height: 25rem;
+      right: 22rem;
+    }
+  
+    &__details {
+      top: 10rem;
+      right: 0;
+    }
+
+    &__info {
+      bottom: 10rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__offer {
+      margin-top: 2rem;
+    }
+  }
+
+  @include respond(mini-tab-port) {
+    &__btn {
+      margin: 2rem 3rem 0 2rem;
+    }
+
+    &__info-text {
+      text-align: center;
+
+      &::before {
+        left: -11rem;
+        top: 3rem;
+      }
+    }
+
+    &__img {
+      right: 17rem;
+    }
+  }
 }
+
