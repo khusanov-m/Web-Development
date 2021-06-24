@@ -2,6 +2,10 @@
   margin: 10rem 8rem 15rem 8rem;
   align-items: center;
   padding-top: 5rem;
+
+  @include respond(tab-land) {
+    margin: 10rem 0rem 15rem;
+  }
 }
 
 .feature {
@@ -32,7 +36,6 @@
   &__cards {
     display: flex;
     justify-content: space-around;
-    // margin-top: 20rem;
     margin: 20rem auto 0 auto;
   }
 
@@ -75,23 +78,13 @@
 
     &::before {
       @extend %bg-sm-3;
-      top: 0;
-      left: 0;
+      @extend %feature-hover-circle;
       opacity: 0;
-      top: 25%;
-      left: 50%;
-      z-index: 20;
     }
 
     &::after {
-      background: $color-white-1;
+      @extend %feature-hover-bg;
       opacity: 0;
-      backdrop-filter: blur(288.889px);
-      border-radius: 33.3333px;
-      height: 58rem;
-      width: 40rem;
-
-      top: -10rem;
     }
 
     &:hover::after {
@@ -111,5 +104,63 @@
 
   &__card-3 {
     padding-top: 3rem;
+  }
+
+  @include respond(desktop) {
+    &__cards {
+      justify-content: space-between;
+    }
+  }
+
+  @include respond(mini-desktop) {
+    &__card {
+      &-img {
+        width: 15rem;
+      }
+
+      &::before {
+        top: 25%;
+        left: 50%;
+      }
+  
+      &::after {
+        height: 50rem;
+        width: 35rem;
+      }
+    }
+  }
+
+  @include respond(tab-port-2) {
+    &__cards {
+      flex-direction: column;
+    }
+
+    &__card {
+      &:first-child {
+        margin-bottom: 25rem;
+      }
+
+      &:last-child {
+        margin-top: 24rem;
+      }
+
+      &::before {
+        opacity: 1;
+      }
+  
+      &::after {
+        opacity: 0.05;
+        height: 50rem;
+        width: 40rem;
+      }
+  
+      &:hover::after {
+        animation: none !important;
+      }
+  
+      &:hover::before {
+        animation: none !important;
+      }
+    }
   }
 }
