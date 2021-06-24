@@ -1,19 +1,16 @@
 @import "components/variables";
-@import "components/base";
 @import "components/mixins";
+@import "components/base";
 @import "components/header";
 @import "components/product";
 @import "components/features";
 @import "components/services";
 @import "components/footer";
 
+@import "components/navigation";
 @import "components/animations";
 @import "components/button";
 @import "components/typography";
 @import "components/utilities";
-
-@import "components/navigation";
-
-// @import "components/";
 
 @import "components/home";
