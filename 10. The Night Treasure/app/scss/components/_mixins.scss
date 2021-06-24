@@ -1,3 +1,44 @@
+%bg-sm-2 {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/bg-sm-2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 66rem;
+  height: 66.5rem;
+
+  animation: showcase 0.2s;
+}
+
+%bg-sm-3 {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/bg-sm-3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 37rem;
+  height: 37rem;
+}
+
+%feature-hover-bg {
+  background: $color-white-1;
+  backdrop-filter: blur(288.889px);
+  border-radius: 33.3333px;
+  height: 58rem;
+  width: 40rem;
+  top: -10rem;
+}
+
+%feature-hover-circle {
+  top: 0;
+  left: 0;
+  top: 25%;
+  left: 50%;
+  z-index: 20;
+}
+
 /*
 MEDIA QUERY MANAGER
 
@@ -18,59 +59,64 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 
-// @mixin respond($breakpoint) {
-//   @if $breakpoint == big-desktop {
-//     @media only screen and (min-width: 112.5em) {
-//       @content;
-//     } // 1800px
-//   }
+@mixin respond($breakpoint) {
+  @if $breakpoint == huge-desktop {
+    @media only screen and (max-width: 112.5em) {
+      @content;
+    } // 1800px
+  }
 
-//   @if $breakpoint == mini-desktop {
-//     @media only screen and (max-width: 100em) {
-//       @content;
-//     } // 1400px
-//   }
+  @if $breakpoint == big-desktop {
+    @media only screen and (max-width: 106.25em) {
+      @content;
+    } // 1700px
+  }
 
-//   @if $breakpoint == tab-land {
-//     @media only screen and (max-width: 75em) {
-//       @content;
-//     } // 1200px
-//   }
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 93.75em) {
+      @content;
+    } // 1500px
+  }
 
-//   @if $breakpoint == tab-port {
-//     @media only screen and (max-width: 56.25em) {
-//       @content;
-//     } // 900px
-//   }
+  @if $breakpoint == mini-desktop {
+    @media only screen and (max-width: 100em) {
+      @content;
+    } // 1400px
+  }
 
-//   @if $breakpoint == phone {
-//     @media only screen and (max-width: 37.5em) {
-//       @content;
-//     } // 600px
-//   }
-// }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } // 1200px
+  }
 
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 68.75em) {
+      @content;
+    } // 1100px
+  }
 
-%bg-sm-2 {
-  content: "";
-  position: absolute;
-  transform: translate(-50%, -50%);
-  background-image: url(../img/bg-sm-2.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 66rem;
-  height: 66.5rem;
+  @if $breakpoint == tab-port-2 {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } // 900px
+  }
 
-  animation: showcase .2s;
-}
+  @if $breakpoint == tab-port-3 {
+    @media only screen and (max-width: 50em) {
+      @content;
+    } // 800px
+  }
 
-%bg-sm-3 {
-  content: "";
-  position: absolute;
-  transform: translate(-50%, -50%);
-  background-image: url(../img/bg-sm-3.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 37rem;
-  height: 37rem;
+  @if $breakpoint == mini-tab-port {
+    @media only screen and (max-width: 43.75em) {
+      @content;
+    } // 700px
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } // 600px
+  }
 }
