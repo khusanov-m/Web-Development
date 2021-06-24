@@ -1,9 +1,8 @@
-
 // Top side NAV
 
 .nav-top {
-  display: grid;
-  grid-template-columns: min-content minmax(25rem, 1fr) min-content;
+  display: flex;
+  justify-content: space-between;
 
   &__img {
     width: 12rem;
@@ -89,6 +88,23 @@
     color: $color-white-1;
     text-decoration: none;
   }
+
+  @include respond(tab-port-3) {
+    &__item:not(:last-child) {
+      margin-right: 5rem;
+    }
+  }
+
+  
+  @include respond(mini-tab-port) {
+    &__item {
+      font-size: 1.5rem;
+  
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+    }
+  }
 }
 
 // Bottom side NAV
@@ -102,9 +118,6 @@
   &__list {
     list-style: none;
     display: flex;
-    // justify-content: space-between;
-
-    
   }
 
   &__item {
@@ -134,7 +147,6 @@
       @extend %bg-sm-2;
       top: 50%;
       left: 58.3%;
-
     }
 
     &:last-child:hover::before {
@@ -180,5 +192,120 @@
     font-size: 3rem;
     text-transform: uppercase;
     position: relative;
+  }
+
+  @include respond(desktop) {
+    &__item {
+      &:not(:last-child) {
+        height: 20rem;
+        padding-right: 6rem;
+      }
+
+      &:not(:first-child) {
+        padding-left: 10rem;
+      }
+
+      &:nth-child(2):hover::before {
+        width: 55.8rem;
+        height: 64rem;
+        top: 67%;
+        left: 73.5%;
+      }
+
+      &:nth-child(3):hover::before {
+        width: 55.8rem;
+        height: 64rem;
+        top: 67%;
+        left: 59.5%;
+      }
+
+      &:last-child:hover::before {
+        width: 55.8rem;
+        height: 64rem;
+        top: 67%;
+        left: 72.2%;
+      }
+    }
+
+    &__item--active {
+      &::before {
+        top: 66%;
+        left: 56%;
+
+        transform: translate(-50%, -50%);
+        width: 55.8rem;
+        height: 64rem;
+      }
+    }
+  }
+
+  @include respond(tab-land) {
+    &__item {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      transition: all 3s;
+
+      &:not(:last-child) {
+        border-right: 2px solid $color-border;
+        height: 12rem;
+        padding-right: 5rem;
+      }
+
+      &:not(:first-child) {
+        padding-left: 5rem;
+      }
+
+      &:nth-child(2):hover::before {
+        display: none;
+      }
+
+      &:nth-child(3):hover::before {
+        display: none;
+      }
+
+      &:last-child:hover::before {
+        display: none;
+      }
+    }
+
+    &__item--active::before {
+      display: none;
+    }
+  }
+
+  @include respond(tab-port-2) {
+    &__link {
+      font-size: 2.4rem;
+    }
+  }
+
+  @include respond(tab-port-3) {
+    &__item {
+      &:not(:last-child) {
+        padding-right: 5rem;
+      }
+
+      &:not(:first-child) {
+        padding-left: 5rem;
+      }
+    }
+
+    &__link {
+      font-size: 1.9rem;
+    }
+  }
+
+  @include respond(mini-tab-port) {
+    &__item {
+      &:not(:last-child) {
+        padding-right: 3rem;
+      }
+
+      &:not(:first-child) {
+        padding-left: 3rem;
+      }
+    }
   }
 }
