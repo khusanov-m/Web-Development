@@ -11,7 +11,7 @@ To open and see websites, please follow steps below:
 
 **Chronology of repository**
 
-## New updates: 16.06.2021
+## New updates: 27.06.2021
 
 _[The Night Treasure](https://perfume-khusanov-m-r.netlify.app/)_ - Designed by [Zain Ahamed](https://dribbble.com/zainahamed) and Built by Mukhammad Khojiakbar Khusanov
 
@@ -71,7 +71,6 @@ _[Tours](https://tours-khusanov-m-r.netlify.app/)_ - Designed [Creative People](
 - Website of Tourism Agency
 - Booking and Searching elements
 - Gorgeous design
-
 
 ## Date: 25.05.2021
 
