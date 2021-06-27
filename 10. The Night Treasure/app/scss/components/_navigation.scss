@@ -105,6 +105,12 @@
       }
     }
   }
+
+  @include respond(big-phone) {
+    &__list {
+      display: none;
+    }
+  }
 }
 
 // Bottom side NAV
@@ -231,8 +237,6 @@
       &::before {
         top: 66%;
         left: 56%;
-
-        transform: translate(-50%, -50%);
         width: 55.8rem;
         height: 64rem;
       }
@@ -241,14 +245,7 @@
 
   @include respond(tab-land) {
     &__item {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      position: relative;
-      transition: all 3s;
-
       &:not(:last-child) {
-        border-right: 2px solid $color-border;
         height: 12rem;
         padding-right: 5rem;
       }
@@ -307,5 +304,9 @@
         padding-left: 3rem;
       }
     }
+  }
+
+  @include respond(big-phone) {
+    display: none;
   }
 }
