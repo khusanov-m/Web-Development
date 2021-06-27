@@ -11,15 +11,24 @@ To open and see websites, please follow steps below:
 
 **Chronology of repository**
 
-
 ## New updates: 16.06.2021
+
+_[The Night Treasure](https://perfume-khusanov-m-r.netlify.app/)_ - Designed by [Zain Ahamed](https://dribbble.com/zainahamed) and Built by Mukhammad Khojiakbar Khusanov
+
+- Perfume promotion website
+- Combined Flexbox and Grid layouts
+- Compressed images
+- Responsive design
+- BEM technology structre
+
+## Date: 16.06.2021
 
 _[Nexter](https://nexter-khusanov-m-r.netlify.app/)_ - Designed by [Jonas Schmedtmann](https://codingheroes.io/) and Built by Mukhammad Khojiakbar Khusanov
 
 - Combined Flexbox and Grid layouts
 - _max-content_ and _min-content_ properties
 - _minmax_ & _calc_ functions
-- Responsive design with grids
+- Responsive design
 - BEM technology structre
 
 ## Date: 15.06.2021
