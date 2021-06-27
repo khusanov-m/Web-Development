@@ -114,7 +114,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     } // 700px
   }
 
-  @if $breakpoint == phone {
+  @if $breakpoint == big-phone {
     @media only screen and (max-width: 37.5em) {
       @content;
     } // 600px
