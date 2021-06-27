@@ -64,6 +64,8 @@ _[IT - House LLC v.2](https://it-house-llc.netlify.app/)_ - Designed and Built b
 - Gulp collector used
 - Comments in each file
 
+P.S. Design of the website does not contain adaptives, for this reason available only in Desktop
+
 ## Date: 25.05.2021
 
 _[Tours](https://tours-khusanov-m-r.netlify.app/)_ - Designed [Creative People](https://dribbble.com/CreativePeoples) and Built by Mukhammad Khojiakbar Khusanov
@@ -100,6 +102,8 @@ _[IT - House LLC v.2](https://it-house-llc.netlify.app/)_ - Designed and Built b
 - clear code was written
 - visual effects enhaced
 - pixel perfect design
+
+UPD: Partially responsive except mobile
 
 ## Date : 23.04.2021
 
