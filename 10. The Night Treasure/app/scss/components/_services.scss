@@ -66,7 +66,7 @@
     }
 
     &__title {
-      margin-bottom: 10rem;
+      margin: 0 auto 10rem;
     }
   }
 
@@ -244,10 +244,6 @@
   @include respond(phone) {
     &__number {
       display: none;
-    }
-
-    &-1 {
-      left: -2.5rem;
     }
   }
 
