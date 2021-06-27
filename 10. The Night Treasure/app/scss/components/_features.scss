@@ -6,6 +6,12 @@
   @include respond(tab-land) {
     margin: 10rem 0rem 15rem;
   }
+
+  @include respond(min-phone) {
+    .heading-3 {
+      text-align: left;
+    }
+  }
 }
 
 .feature {
@@ -161,6 +167,32 @@
       &:hover::before {
         animation: none !important;
       }
+    }
+  }
+
+  @include respond(phone) {
+    &__intro {
+      flex-direction: column;
+    }
+  }
+
+  @include respond(min-phone) {
+    &__cards {
+      margin: 15rem auto 0;
+    }
+
+    &__intro {
+      &-text {
+        margin-bottom: 5rem;
+      }
+      
+      .btn {
+        align-self: center;
+      }
+    }
+
+    &__card-1, &__card-3 {
+      display: none;
     }
   }
 }
