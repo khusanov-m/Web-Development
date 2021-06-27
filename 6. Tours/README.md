@@ -5,3 +5,5 @@ _[Tours](https://tours-khusanov-m-r.netlify.app/)_ - Designed [Creative People](
 - Website of Tourism Agency
 - Booking and Searching elements
 - Gorgeous design
+
+P.S. Design of the website does not contain adaptives, for this reason available only in Desktop
