@@ -191,4 +191,31 @@
       width: 50rem;
     }
   }
+
+  @include respond(mini-tab-port) {
+    &__contact {
+      flex-direction: column;
+    }
+
+    &__form {
+      margin: 5rem 0;
+    }
+
+    &__input:focus,
+    &__input:active {
+      width: 60rem;
+    }
+
+    &__btn {
+      font-size: 1.5rem;
+    }
+  }
+
+  @include respond(big-phone) {
+    margin: -17rem;
+
+    &__contact {
+      padding: 10rem 0 0 0;
+    }
+  }
 }
