@@ -220,5 +220,39 @@
       right: 17rem;
     }
   }
+
+  @include respond(big-phone) {
+    &__title {
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: none;
+    }
+
+    &__img {
+      left: 5rem;
+      top: 28rem;
+      width: 30rem;
+      height: 30rem;
+    }
+
+    &__info {
+      top: 65rem;
+    }
+
+    &__details {
+      top: 29rem;
+      right: 5rem;
+    }
+
+    &__info-text {
+      text-align: center;
+
+      &::before {
+        left: -11rem;
+        top: 3rem;
+      }
+    }
+  }
 }
 
