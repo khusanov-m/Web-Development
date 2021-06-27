@@ -18,6 +18,10 @@ body {
   @include respond(tab-port-3) {
     font-size: 4rem;
   }
+
+  @include respond(phone) {
+    text-align: center;
+  }
 }
 
 .heading-4 {
