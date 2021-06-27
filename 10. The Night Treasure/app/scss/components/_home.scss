@@ -12,7 +12,7 @@
     margin: 5rem 8rem;
   }
 
-  @include respond(min-phone) {
+  @include respond(big-phone) {
     margin: 5rem 3rem;
   }
 }
