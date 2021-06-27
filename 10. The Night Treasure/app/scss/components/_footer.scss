@@ -225,10 +225,27 @@
       max-width: 80%;
       margin: 0 auto;
     }
+
+    &__input:focus,
+    &__input:active {
+      width: 50rem;
+    }
   }
 
   @include respond(min-phone) {
     margin-top: 15rem;
+
+    &__input:focus,
+    &__input:active {
+      width: 47rem;
+    }
+
+    &__btn {
+      padding-left: 2rem;
+    }
+
+    .copyright-alt {
+      max-width: max-content;
+    }
   }
-  
 }
