@@ -46,6 +46,10 @@
       transform: translateY(2px);
     }
   }
+
+  @include respond(big-phone) {
+    overflow: inherit;
+  }
 }
 
 .cta {
