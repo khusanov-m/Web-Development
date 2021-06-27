@@ -244,13 +244,41 @@
       top: 29rem;
       right: 5rem;
     }
+  }
 
+  @include respond(phone) {
+    &__details {
+      right: 0;
+    }
+
+    &__img {
+      left: 0;
+    }
+  }
+
+  @include respond(min-phone) {
+    &__details {
+      top: 45rem;
+    }
+
+    &__img {
+      top: 30rem;
+    }
+
+    &__info {
+      top: 80rem;
+      bottom: inherit;
+    }
+
+    
     &__info-text {
-      text-align: center;
+      margin-left: 5rem;
+      text-align: left;
 
       &::before {
-        left: -11rem;
-        top: 3rem;
+        left: -5rem;
+        top: 1.5rem;
+        width: 4rem;
       }
     }
   }
