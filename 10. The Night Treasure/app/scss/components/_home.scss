@@ -11,4 +11,8 @@
   @include respond(desktop) {
     margin: 5rem 8rem;
   }
+
+  @include respond(min-phone) {
+    margin: 5rem 3rem;
+  }
 }
