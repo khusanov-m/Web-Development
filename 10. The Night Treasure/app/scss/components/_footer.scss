@@ -212,10 +212,23 @@
   }
 
   @include respond(big-phone) {
-    margin: -17rem;
+    margin-top: -17rem;
 
     &__contact {
       padding: 10rem 0 0 0;
     }
   }
+
+  @include respond(phone) {
+    .copyright-alt {
+      text-align: center;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  @include respond(min-phone) {
+    margin-top: 15rem;
+  }
+  
 }
