@@ -1,0 +1,373 @@
+// Contacs Section
+
+.contacts {
+  margin: 20rem 0 10rem 0;
+}
+
+.contacts-bg {
+  width: 117rem;
+  height: 52.1rem;
+  background: #ffffff;
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+
+  h2 {
+    padding: 6.5rem 0 5rem 10rem;
+  }
+}
+
+.form {
+  max-width: 64.5rem;
+  margin-left: 10rem;
+  padding-top: 3rem;
+
+  ::placeholder {
+    color: $primary;
+    opacity: 0.5;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="phone"],
+  textarea {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+.name,
+.email,
+.phone,
+.text {
+  p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  label,
+  div {
+    position: absolute;
+    padding-left: 1.3rem;
+    width: 7.3rem;
+    height: 2.6rem;
+    background: linear-gradient(
+      270deg,
+      #c8d9d6 -19.11%,
+      #146668 118.2%,
+      #116466 118.21%
+    );
+    box-shadow: 0 0 0.4rem #c8d9d6;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+
+    margin-top: -5.5rem;
+  }
+}
+
+#fname,
+#email,
+#phone,
+#text,
+.txtarea {
+  width: 28rem;
+  background: linear-gradient(0deg, #c8d9d6, #c8d9d6);
+  box-shadow: 0px 0.2rem 0.4rem #116466;
+  border-radius: 1rem;
+  border: 0;
+  padding: 2rem 0 0.3rem 1.2rem;
+  margin-left: 1.5rem;
+  color: $primary;
+}
+
+#fname,
+#email,
+#phone,
+#text {
+  height: 4rem;
+}
+
+.txtarea {
+  height: 21.9rem;
+  resize: none;
+}
+
+.email,
+.phone {
+  margin: 5rem 0 3rem 0;
+}
+
+.text {
+  margin-left: 35rem;
+  margin-top: -24.9rem;
+
+  div {
+    margin-top: -23.5rem;
+  }
+}
+
+.form-btn {
+  width: 12.2rem;
+  height: 4rem;
+  background: linear-gradient(
+    270deg,
+    #c8d9d6 -19.11%,
+    #146668 118.2%,
+    #116466 118.21%
+  );
+  box-shadow: 0 0 0.4rem #c8d9d6;
+  border-radius: 1rem;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 5rem 0 0 27rem;
+  cursor: pointer;
+}
+
+.divider {
+  width: 1px;
+  height: 42.1rem;
+  background: #116466;
+  border-radius: 0.5px;
+  margin: -42rem 0 0 85rem;
+  display: flex;
+}
+
+.socials {
+  margin: -29.5rem 0 0 93rem;
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 3rem 3rem;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+}
+
+.grid-item {
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(
+    270deg,
+    #c8d9d6 -19.11%,
+    #146668 118.2%,
+    #116466 118.21%
+  );
+  box-shadow: 0 0 0.4rem #c8d9d6;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a i {
+    font-size: 1.3rem;
+  }
+
+  &:hover {
+    transform: scale(1.5);
+    transition: all 0.5s ease;
+  }
+
+  &:not(:hover) {
+    transition: 0.5s;
+  }
+}
+
+.cred {
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-align: center;
+  color: $primary;
+  margin-top: 10rem;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////// RESPOSIVENESS
+@include respond(tab-mini) {
+  // Contacs Section
+
+  .contacts {
+    margin: 15rem 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts-bg {
+    width: 100rem;
+    height: 86rem;
+
+    h2 {
+      padding: 6.5rem 0 5rem 10rem;
+    }
+
+    .wrapper-contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .form {
+    max-width: 64.5rem;
+    margin-left: 0rem;
+  }
+
+  .divider {
+    width: 46rem;
+    height: 0.2rem;
+    margin: 6rem 0 6rem 0rem;
+    display: flex;
+  }
+
+  .socials {
+    margin: 0rem 0 0 0rem;
+  }
+}
+
+@include respond(tab-port--2) {
+  .contacts-bg {
+    width: 90rem;
+  }
+}
+
+@include respond(tab-small) {
+  .contacts-bg {
+    width: 70rem;
+    height: 80rem;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-left: -6rem;
+    }
+  }
+}
+
+@include respond(tab-small--2) {
+  .contacts-bg {
+    width: 65rem;
+  }
+  #fname,
+  #email,
+  #phone,
+  #text,
+  .txtarea {
+    width: 22rem;
+  }
+
+  .form-btn {
+    left: 50%;
+    transform: translateX(-30%);
+  }
+}
+
+@include respond(phone) {
+  .contacts-bg {
+    width: 60rem;
+    height: 80rem;
+  }
+
+  #fname,
+  #email,
+  #phone,
+  #text,
+  .txtarea {
+    width: 20rem;
+  }
+
+  .form-btn {
+    transform: translateX(-80%);
+  }
+
+  .text {
+    margin-left: 25rem;
+  }
+}
+
+@include respond(phone-2) {
+  .contacts-bg {
+    width: 50rem;
+    height: 105rem;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 0rem;
+    padding-top: 0rem;
+  }
+
+  #fname,
+  #email,
+  #phone,
+  #text,
+  .txtarea {
+    width: 28rem;
+    margin-left: 0rem;
+  }
+
+  .text {
+    margin-left: 0rem;
+    margin-top: 5rem;
+  }
+  .form-btn-1 {
+    left: 50%;
+    transform: translateX(0%);
+    margin: 0;
+    padding: 0;
+    margin-top: 5rem;
+  }
+
+  .name,
+  .email,
+  .phone,
+  .text {
+    label,
+    div {
+      margin-left: -2rem;
+    }
+  }
+
+  .divider {
+    width: 35rem;
+  }
+}
+
+@include respond(tab-m-l) {
+  .adobe {
+    margin: 2rem 0 0 -5rem;
+  }
+
+  .tools {
+    margin: 2rem 0 0 -6rem;
+  }
+
+  .contacts-bg {
+    width: 40rem;
+  }
+  .divider {
+    width: 30rem;
+  }
+}
+@include respond(tab-m-m) {
+  .contacts-bg {
+    width: 37rem;
+    height: 105rem;
+  }
+
+  .cred {
+    margin-top: 7rem;
+  }
+}
+@include respond(tab-m-s) {
+  .contacts-bg {
+    width: 35rem;
+  }
+}
