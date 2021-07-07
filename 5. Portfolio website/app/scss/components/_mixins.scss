@@ -1,0 +1,97 @@
+/*
+MEDIA QUERY MANAGER
+
+0 - 600px : Phone
+600 - 900 px : Tablet portrait
+900 - 1200 px : Tablet landscape
+1200 - 1800 px : Normal style
+1800 + : big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } // 1800px
+  }
+
+  @if $breakpoint == mini-desktop {
+    @media only screen and (max-width: 100em) {
+      @content;
+    } // 1400px
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } // 1200px
+  }
+
+  @if $breakpoint == tab-mini {
+    @media only screen and (max-width: 68.75em) {
+      @content;
+    } // 1100px
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } // 900px
+  }
+
+  @if $breakpoint == tab-port--2 {
+    @media only screen and (max-width: 50em) {
+      @content;
+    } // 800px
+  }
+
+  @if $breakpoint == tab-small {
+    @media only screen and (max-width: 48em) {
+      @content;
+    } // 768px
+  }
+
+  @if $breakpoint == tab-small--2 {
+    @media only screen and (max-width: 38.75em) {
+      @content;
+    } // 620px
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } // 600px
+  }
+
+  @if $breakpoint == phone-2 {
+    @media only screen and (max-width: 31.25em) {
+      @content;
+    } // 500px
+  }
+
+  @if $breakpoint == tab-m-l {
+    @media only screen and (max-width: 26.56em) {
+      @content;
+    } // 425px
+  }
+  @if $breakpoint == tab-m-m {
+    @media only screen and (max-width: 26.5em) {
+      @content;
+    } // 375px
+  }
+  @if $breakpoint == tab-m-s {
+    @media only screen and (max-width: 20em) {
+      @content;
+    } // 320px
+  }
+}
