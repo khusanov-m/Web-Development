@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px / 16px = 62.5 -> 1rem = 10px
+  scroll-behavior: smooth;
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-mini) {
+    font-size: 53%; // 1 rem = 8.5px, 8.5/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; // 1 rem = 8px, 8/16 = 50%
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  overflow-x: hidden;
+  background: #c8d9d6;
+  position: relative;
+}
+
+.container {
+  max-width: 117rem;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
