@@ -1,0 +1,539 @@
+// Skills Section
+.skills {
+  padding-top: 12rem;
+  margin-top: 25px;
+
+  .wrapper--all {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.skills-bg {
+  width: 117rem;
+  height: 62rem;
+  background: #fff;
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 2.5rem;
+
+  h2 {
+    padding: 6.5rem 0 5rem 10rem;
+  }
+}
+
+.skills-filter {
+  width: 23.5rem;
+  height: 42.5rem;
+  background: linear-gradient(
+    180deg,
+    $secondary -15.76%,
+    $primary 111.05%,
+    $primary 111.06%
+  );
+
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 2.5rem;
+  margin-left: 3.3rem;
+  font-size: 1.4rem;
+  padding: 5rem 0 0 3.5rem;
+
+  div {
+    margin-bottom: 3rem;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p:hover {
+    color: $primary;
+  }
+}
+
+.skill-list {
+  display: none;
+}
+
+.skill-active {
+  display: block;
+  animation: hide-show 0.5s linear;
+}
+
+.skills-list {
+  width: 83.5rem;
+  height: 42.5rem;
+  background: #fff;
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 2.5rem;
+  margin-left: 3.3rem;
+  padding: 3.8rem 0 2.5rem 4rem;
+}
+
+.filter-active {
+  color: $tertiary;
+}
+
+h3 {
+  color: $tertiary;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.html > p:hover > i {
+  color: #e20000;
+}
+
+.css > p:hover > i {
+  color: #0027af;
+}
+
+.js > p:hover > i {
+  color: #fff500;
+}
+
+.php > p:hover > i {
+  color: #0074c8;
+}
+
+.php .details p:first-child:hover i {
+  color: #ff6b00;
+}
+
+.css .details p:first-child:hover i {
+  color: #ff00a8;
+}
+
+.adobe > p:hover > i {
+  color: #ff0000;
+}
+
+.d3 .details p:first-child:hover i {
+  color: #40e378;
+}
+
+.soft-tools .details {
+  & p:first-child:hover,
+  p:last-child:hover {
+    i {
+      color: #007ac0;
+    }
+  }
+}
+
+.collector .details p:first-child:hover i {
+  color: #d34a47;
+}
+
+.details {
+  margin-bottom: 1.5rem;
+
+  p {
+    margin: 1.5rem 0 1rem 0;
+    color: #000;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+}
+
+.html,
+.css,
+.js,
+.py,
+.php,
+.adobe,
+.d3,
+.tools,
+.ms-main,
+.ms-others,
+.langs,
+.soft-tools,
+.cms,
+.collector {
+  margin: 2.5rem 0 1.5rem 0;
+
+  & > p {
+    color: #000;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+}
+
+.js,
+.tools {
+  margin-right: 10rem;
+}
+
+.html {
+  margin-bottom: 3.5rem;
+}
+
+.php,
+.d3,
+.ms-others,
+.collector {
+  margin: 2.5rem auto 0 23.5rem;
+}
+
+/////////////////////////// RESPOSIVENESS
+@include respond(tab-mini) {
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .wrapper--all {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .skills-bg {
+    width: 100rem;
+    height: 76rem;
+  }
+
+  .skills-filter {
+    width: 80rem;
+    height: 9rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 0;
+    padding: 0rem 0 0 0rem;
+    background: linear-gradient(
+90deg
+,#d1e8e2 -15.76%,#116466 111.05%,#116466 111.06%);
+
+    div {
+      margin-bottom: 0rem;
+    }
+  }
+
+  .skills-list {
+    box-shadow: 0 0 1rem .2rem rgba(0, 0, 0, .25);
+    width: 80rem;
+    height: 46rem;
+    margin-right: 0rem;
+    margin-top: 4.8rem;
+    margin-left: 0;
+    padding: 3.8rem 0 2.5rem 4rem;
+    display: flex;
+
+    .wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .details {
+    margin-bottom: 1.5rem;
+    margin-right: 5rem;
+
+    p {
+      margin: 1.5rem 0 1rem 0;
+      color: #000;
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+  }
+
+  .js,
+  .tools {
+    margin-right: 0rem;
+  }
+
+  .html {
+    margin-bottom: 3.5rem;
+  }
+
+  .css {
+    margin-top: 0;
+  }
+
+  .js {
+    margin-top: -2.6rem;
+  }
+
+  .d3 {
+    margin: 0;
+    padding: 0;
+    margin-top: -1.5rem;
+  }
+
+  .ms-others {
+    margin-top: -0.3rem;
+  }
+
+  .tools {
+    margin: 0;
+    padding: 0;
+
+    margin-top: -1.5rem;
+  }
+
+  .collector {
+    margin: 0;
+    padding: 0;
+    margin-top: -4rem;
+  }
+}
+
+@include respond(tab-port--2) {
+  .skills-bg {
+    width: 90rem;
+  }
+}
+
+@include respond(tab-small) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .skills-bg {
+    width: 70rem;
+  }
+
+  .skills-filter {
+    width: 60rem;
+    height: 10rem;
+  }
+
+  .skills-list {
+    width: 60rem;
+  }
+}
+
+@include respond(tab-small--2) {
+  .skills-bg {
+    width: 65rem;
+  }
+
+  .skills-filter {
+    width: 55rem;
+  }
+
+  .skill-type {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+  }
+
+  .skills-list {
+    width: 55rem;
+  }
+}
+
+@include respond(phone) {
+  .skills-bg {
+    width: 60rem;
+  }
+}
+
+@include respond(phone-2) {
+  h2 {
+    margin-left: -3rem;
+  }
+
+  .skills-bg {
+    width: 50rem;
+  }
+
+  .skills-filter {
+    width: 45rem;
+    height: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+    text-align: center;
+    border-radius: 2rem;
+  }
+
+  .fab {
+    margin-right: 0.3rem;
+  }
+
+  .skills-list {
+    width: 45rem;
+  }
+
+  .js {
+    margin-top: -10rem;
+  }
+
+  .ms-others{
+    margin: 1rem auto 0 3.5rem;
+  }
+}
+
+@include respond(tab-m-l) {
+  .skills-bg {
+    width: 40rem;
+    height: 83rem;
+  }
+
+  .skills-filter {
+    width: 35rem;
+    height: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skill-type {
+    margin-left: 2rem;
+  }
+
+  .skills-list {
+    width: 35rem;
+    height: 55rem;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .adobe {
+      padding: 0;
+      margin: 4rem 0 0 -5rem;
+  
+      .details p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .js {
+    padding: 0;
+    margin: 2rem 0 0 -4.7rem;
+
+    .details p {
+      margin-bottom: 0;
+    }
+  }
+
+  .css {
+    padding: 0;
+    margin: 2rem 0 0 -3rem;
+
+    .details p {
+      margin-bottom: 0;
+    }
+  }
+
+  .html {
+    padding: 0;
+    margin: 4rem 0 0 0;
+
+    .details p {
+      margin-bottom: 0;
+    }
+  }
+
+  .py {
+    margin-left: -16rem;
+  }
+
+  .d3 {
+    margin: 0;
+    padding: 0;
+    margin: 2rem 0 0 0;
+
+    .details p {
+      margin-bottom: 0;
+    }
+  }
+
+  .tools {
+    padding: 0;
+    margin: 4rem 0 0 -11rem;
+
+    .details p {
+      margin-bottom: 0;
+    }
+  }
+
+  .ms-main {
+    padding: 0;
+    margin-top: 4rem;
+    margin: 4rem 0 0 -1rem;
+
+    .details p {
+      margin-bottom: 0;
+    }
+  }
+
+  .ms-others {
+    margin: 0;
+    margin-left: -2rem;
+    padding: 0;
+
+    p:nth-child(1) {
+      margin: 2rem 0;
+    }
+
+    .details p {
+      margin-bottom: 0;
+    }
+  }
+
+  .collector {
+    margin: 0;
+    margin-top: -2rem;
+    margin-left: -2.5rem;
+    padding: 0;
+
+    p:nth-child(1) {
+      margin: 2rem 0;
+    }
+
+    .details p {
+      margin-bottom: 0;
+    }
+  }
+
+  .soft-tools {
+    margin: 4rem 0 1.5rem 0;
+  }
+
+  .langs {
+    margin-top: 4rem;
+  }
+}
+
+@include respond(tab-m-m) {
+  .skills-bg {
+    width: 37rem;
+    height: 85rem;
+  }
+
+  .skills-filter {
+    width: 32rem;
+    height: 8rem;
+  }
+
+  .skill-type {
+    margin: 1rem;
+  }
+
+  .skills-list {
+    width: 32rem;
+  }
+
+  .adobe {
+    margin: 4rem 0 0 -10rem;
+  }
+}
+
+@include respond(tab-m-s) {
+  .skills-bg {
+    width: 35rem;
+    height: 85rem;
+  }
+}
