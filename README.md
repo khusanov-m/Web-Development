@@ -1,6 +1,6 @@
 ## Please note that no one is allowed to use the included files for commercial purposes and pretend to be the owner. However scripts and methods that I used can be taken for your own project
 
-#### About this repository
+### About this repository
 Current respository is 1st part of Web-Development which include 10 websites built by myself (khusanov-m)
 As respository starts weighting more than 200mb, I decided to create additional repositories with almost the same title except part (P) indicators. So it will be easier to find others.
 
