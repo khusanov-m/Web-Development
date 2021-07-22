@@ -124,6 +124,10 @@
   font-size: 1.5rem;
   margin: 5rem 0 0 27rem;
   cursor: pointer;
+
+  &:active {
+    transform: scale(.98);
+  }
 }
 
 .divider {
@@ -337,6 +341,10 @@
 
   .divider {
     width: 35rem;
+  }
+
+  .fab {
+    margin: 0;  
   }
 }
 

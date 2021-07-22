@@ -2,10 +2,12 @@
 
 .header {
   padding: 5rem 0 15rem 0;
-  background: url(/img/bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url(/img/bg-2.png) no-repeat center center/cover;
   height: 100vh;
+
+  @media (min-resolution: 192dpi), (min-width: 37.5em) and (max-width: 125em) {
+    background: url(/img/bg-1.jpg) no-repeat center center/cover;
+  }
 }
 
 .logo {
@@ -133,7 +135,7 @@
 .cv {
   width: 5.5rem;
   height: 4rem;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .hire,
@@ -146,6 +148,10 @@
   align-items: center;
   font-weight: 700;
   font-size: 1.5rem;
+
+  &:active {
+    transform: scale(.98);
+  }
 }
 
 .cv:hover {
