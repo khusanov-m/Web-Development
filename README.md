@@ -1,4 +1,4 @@
-## Notice that no one is allowed to use for commercial purpose included files. However scripts and methods that I used can be taken for your own project
+## Please note that no one is allowed to use the included files for commercial purposes and pretend to be the owner. However scripts and methods that I used can be taken for your own project
 
 #### About this repository
 Current respository is 1st part of Web-Development which include 10 websites built by myself (khusanov-m)
