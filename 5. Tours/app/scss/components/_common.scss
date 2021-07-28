@@ -44,6 +44,10 @@
   margin-right: 20px;
 
   @extend %btn-style;
+
+  &:active {
+    transform: scale(0.98);
+  }
 }
 
 .where,
@@ -63,13 +67,6 @@ button {
   }
 }
 
-.where,
-.when,
-.how {
-  padding-left: 20px;
-  background-position: 90% 50%;
-}
-
 input::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
@@ -77,16 +74,20 @@ input::-webkit-calendar-picker-indicator {
 .where {
   background: url("../img/where.png") no-repeat;
   margin-left: 20px;
-  background-position: 90% 50%;
 }
 
 .how {
   background: url("../img/how.png") no-repeat;
-  background-position: 90% 50%;
 }
 
 .when {
   background: url("../img/when.png") no-repeat;
+}
+
+.where,
+.when,
+.how {
+  padding-left: 20px;
   background-position: 90% 50%;
 }
 
@@ -165,13 +166,12 @@ input::-webkit-calendar-picker-indicator {
 
   a {
     color: #fff;
-
-    div {
-      width: 141px;
-      height: 45px;
-      
-      @extend %btn-style;
-      @extend %center;
+    width: 141px;
+    height: 45px;
+    @extend %btn-style;
+    @extend %center;
+    &:active {
+      transform: scale(0.98);
     }
   }
 }
@@ -214,9 +214,13 @@ input::-webkit-calendar-picker-indicator {
 .popular-btn {
   width: 198px;
   height: 56px;
-  
+
   @extend %btn-style;
   @extend %center;
+
+  &:active {
+    transform: scale(0.98);
+  }
 }
 
 .zan {
@@ -236,16 +240,21 @@ input::-webkit-calendar-picker-indicator {
   bottom: 100px;
   left: 50px;
   padding: 15px 0 0 30px;
+
+  &:active {
+    transform: scale(0.98);
+  }
 }
 
 .zan:hover .book-btn {
   opacity: 1;
-  transition: 0.5s;
+  transition: opacity 0.5s, transform 0.2s;
   cursor: pointer;
 }
 
 .zan-slider {
   padding-bottom: 70px;
+  transition: transform 0.3s ease;
 }
 
 .zan-info {
@@ -316,27 +325,27 @@ input::-webkit-calendar-picker-indicator {
 .zan-controls {
   display: flex;
   justify-content: center;
-  margin-bottom: 150px;
 }
 
 .zan-left,
 .zan-right {
   width: 45px;
   height: 45px;
+  color: #fff;
+  font-size: 20px;
   background: #009d98;
   box-shadow: 0px 15px 25px rgba(0, 157, 152, 0.3);
   border-radius: 50%;
-  
+
   @extend %center;
 
   cursor: pointer;
+
+  &:active i {
+    transform: translateY(2px);
+  }
 }
 
 .zan-left {
   margin-right: 20px;
 }
-
-.zan-right {
-  transform: scale(-1, 1);
-}
-

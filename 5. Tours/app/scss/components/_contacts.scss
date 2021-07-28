@@ -41,6 +41,10 @@
 
   input {
     height: 46px;
+
+    &:not(:last-child) {
+      padding-left: 15px;
+    }
   }
 
   input,
@@ -51,16 +55,38 @@
     border-radius: 4px;
     border: 0;
     margin-bottom: 30px;
+    color: #fff;
 
     &:focus {
       background: #ffffff;
       box-shadow: 0px 10px 50px rgba(19, 15, 64, 0.1);
+      outline: none;
+      background: rgba(0, 0, 0, 0.5);
     }
   }
 
   textarea {
     height: 120px;
     resize: none;
+    padding: 15px;
+    padding-right: 10px;
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+    }
   }
 
   input[value="SEND"] {
@@ -72,5 +98,9 @@
     font-weight: 600;
     color: #fff;
     cursor: pointer;
+
+    &:active {
+      transform: scale(0.98);
+    }
   }
 }

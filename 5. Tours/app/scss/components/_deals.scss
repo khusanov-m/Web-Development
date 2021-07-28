@@ -22,6 +22,10 @@
   height: 50px;
 
   @extend %btn-style;
+
+  &:active {
+    transform: scale(.98);
+  }
 }
 
 .time {
@@ -41,16 +45,8 @@
   }
 }
 
-.tour {
-  margin-right: 30px;
-
-  h3 {
-    margin: 30px 0 30px 0;
-    max-width: 230px;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 34px;
-  }
+.tour-list {
+  padding-left: 30px;
 }
 
 .tour-info,
@@ -69,4 +65,17 @@
       font-size: 36px;
     }
   }
+
+  h3 {
+    margin: 30px 0 30px 0;
+    max-width: 230px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+  }
+}
+
+.fa-clock {
+  font-size: 20px;
+  color: #878787;
 }

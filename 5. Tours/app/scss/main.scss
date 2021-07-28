@@ -1,11 +1,10 @@
-@import "variables"; //переменные
-
-@import "reset"; //сборс стилей
-// @import "fonts"; //подключаем шрифты (локально)
+@import "components/variables"; //переменные
+@import "components/reset"; //сборс стилей
+@import "components/fonts"; //подключаем шрифты (локально)
 
 //подключаем БЭМ блоки
-@import "blocks/header";
-@import "blocks/common";
-@import "blocks/deals";
-@import "blocks/contacts";
-@import "blocks/footer";
+@import "components/header";
+@import "components/common";
+@import "components/deals";
+@import "components/contacts";
+@import "components/footer";
