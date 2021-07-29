@@ -24,16 +24,26 @@
   <body>
     <div class="container">
     <!-- Header -->
-    <nav class="nav-top">
+    <img src="img/bg-sm-1.png" alt="bg-item" class="bg-circle bg-circle--1" />
+<img src="img/bg-header.png" alt="bg-item" class="bg-header" />
+<img src="img/bg-sm-1.png" alt="bg-item" class="bg-circle bg-circle--2" />
+
+<nav class="nav-top">
   <img src="img/logo.png" alt="logo" class="nav-top__img" />
 
   <ul class="nav-top__list">
     <li class="nav-top__item nav-top__item--active">
       <a href="#header" class="nav-top__link">About</a>
     </li>
-    <li class="nav-top__item"><a href="#ingridients" class="nav-top__link">Ingridients</a></li>
-    <li class="nav-top__item"><a href="#services" class="nav-top__link">Product</a></li>
-    <li class="nav-top__item"><a href="#contact" class="nav-top__link">Contact</a></li>
+    <li class="nav-top__item">
+      <a href="#ingridients" class="nav-top__link">Ingridients</a>
+    </li>
+    <li class="nav-top__item">
+      <a href="#services" class="nav-top__link">Product</a>
+    </li>
+    <li class="nav-top__item">
+      <a href="#contact" class="nav-top__link">Contact</a>
+    </li>
   </ul>
 
   <div class="nav-top__btn"></div>
@@ -86,7 +96,11 @@
       <button class="cta product__btn">Add to cart +</button>
 
       <div class="product__offer">
-        <img src="img/special.svg" alt="Special Offer" class="product__offer-img">
+        <img
+          src="img/special.svg"
+          alt="Special Offer"
+          class="product__offer-img"
+        />
         <i class="fa fa-play product__offer-play"></i>
       </div>
     </div>
@@ -114,19 +128,21 @@
   </nav>
 </header>
 
+
     <!-- Features -->
     <section class="features" id="ingridients">
+  <img src="img/bg-sm-1.png" alt="bg-item" class="bg-circle bg-circle--3">
   <h3 class="heading-3">A Vanila Phrodisiac</h3>
   <div class="feature__intro">
     <p class="feature__intro-text">Financial institutions provide financial services for members and as middlemen between the savers and borrowers.</p>
 
     <div class="btn">
-      <button><i class="fa fa-chevron-left btn-left"></i></button>
-      <button><i class="fa fa-chevron-right btn-right"></i></button>
+      <button id="feature-left"><i class="fa fa-chevron-left btn-left"></i></button>
+      <button id="feature-right"><i class="fa fa-chevron-right btn-right"></i></button>
     </div>
   </div>
 
-  <div class="feature__cards">
+  <div class="feature__cards" id="feature__cards">
     <div class="feature__card feature__card-1">
       <img src="img/rose.png" alt="rose" class="feature__card-img">
       <h5 class="feature__card-title heading-5 mt-md">Rose damascena</h5>
@@ -153,43 +169,75 @@
   <div class="service__intro">
     <h3 class="service__title heading-3">The fragrance larger than life.</h3>
     <div class="btn">
-      <button><a href="#previous"><i class="fa fa-chevron-left btn-left previous"></i></a></button>
-      <button><a href="#next"><i class="fa fa-chevron-right btn-right next"></i></a></button>
+      <button id="left">
+        <i class="fa fa-chevron-left btn-left previous"></i>
+      </button>
+      <button id="right">
+        <i class="fa fa-chevron-right btn-right next"></i>
+      </button>
     </div>
+    <img
+      src="img/bg-perfume.png"
+      alt="bg-item"
+      class="bg-circle bg-circle--perfume-1"
+    />
   </div>
 
-  <div class="perfumes">
+  <div class="perfumes" id="perfumes">
     <div class="perfume perfume-1">
       <p class="perfume__number perfume__number-1">01</p>
-      <img src="img/perfume-1.png" alt="Perfume 1" class="perfume__img-1">
+      <img src="img/perfume-1.png" alt="Perfume 1" class="perfume__img-1" />
+      <img
+        src="img/bg-perfume-2.png"
+        alt="bg-item"
+        class="bg-circle bg-circle--perfume-2 active"
+        id="bg-perfume-2"
+      />
 
       <div class="perfume__details">
         <h6 class="perfume__title">The night treassure</h6>
-        <p class="perfume__info">L'amour est un trésor. Depuis sa création en 1990, l'Eau de  absolu sous toute.</p>
+        <p class="perfume__info">
+          L'amour est un trésor. Depuis sa création en 1990, l'Eau de absolu
+          sous toute.
+        </p>
         <a href="" class="perfume__link">Learn more</a>
       </div>
     </div>
 
     <div class="perfume perfume-2">
       <p class="perfume__number perfume__number-2">02</p>
-      <img src="img/perfume-2.png" alt="Perfume 2" class="perfume__img-2">
+      <img src="img/perfume-2.png" alt="Perfume 2" class="perfume__img-2" />
+      <img
+        src="img/bg-perfume-2.png"
+        alt="bg-item"
+        class="bg-circle bg-circle--perfume-3"
+        id="bg-perfume-3"
+      />
 
       <div class="perfume__details">
         <h6 class="perfume__title">Victoria’s Secret Bombshell</h6>
-        <p class="perfume__info perfume__info-2">L'amour est un trésor. Depuis sa création en 1990, l'Eau de Pafum Trésor incarne l'amour absolu sous toutes des</p>
+        <p class="perfume__info perfume__info-2">
+          L'amour est un trésor. Depuis sa création en 1990, l'Eau de Pafum
+          Trésor incarne l'amour absolu sous toutes des
+        </p>
         <a href="" class="perfume__link">Learn more</a>
       </div>
     </div>
   </div>
 </section>
+
     </div>
     <!-- Footer -->
     <footer class="footer" id="contact">
   <div class="footer__contact">
-    <img src="img/logo.png" alt="logo" class="footer__img">
+    <img src="img/logo.png" alt="logo" class="footer__img" />
 
     <div class="footer__form">
-      <input type="text" class="footer__input" placeholder="Your business email...">
+      <input
+        type="text"
+        class="footer__input"
+        placeholder="Your business email..."
+      />
       <button class="footer__btn">Get started</button>
     </div>
 
@@ -200,29 +248,60 @@
     </div>
   </div>
 
+  <img
+    src="img/bg-footer.png"
+    alt="bg-item"
+    class="bg-circle bg-circle--footer"
+  />
+
   <div class="footer__nav">
     <div class="copyright">
       <p>Copyright &copy; 2021.</p>
-      <p>Built by <a href="https://khusanov-m-r.netlify.app/">Khusanov M. R.</a></p>
+      <p>
+        Built by <a href="https://khusanov-m-r.netlify.app/">Khusanov M. R.</a>
+      </p>
     </div>
 
     <ul class="nav-top__list">
-      <li class="nav-top__item"><a href="#header" class="nav-top__link">About</a></li>
-      <li class="nav-top__item"><a href="#ingridients" class="nav-top__link">Ingridients</a></li>
-      <li class="nav-top__item"><a href="#services" class="nav-top__link">Product</a></li>
-      <li class="nav-top__item nav-top__item--active"><a href="#contact" class="nav-top__link">Contact</a></li>
+      <li class="nav-top__item">
+        <a href="#header" class="nav-top__link">About</a>
+      </li>
+      <li class="nav-top__item">
+        <a href="#ingridients" class="nav-top__link">Ingridients</a>
+      </li>
+      <li class="nav-top__item">
+        <a href="#services" class="nav-top__link">Product</a>
+      </li>
+      <li class="nav-top__item nav-top__item--active">
+        <a href="#contact" class="nav-top__link">Contact</a>
+      </li>
     </ul>
 
     <div class="copyright">
       <p>Copyright &copy; 2020.</p>
-      <p>Designed by <a href="https://dribbble.com/shots/15583220-Ah-You-could-smell-the-redolence-from-here">Zain Ahamed</a></p>
+      <p>
+        Designed by
+        <a
+          href="https://dribbble.com/shots/15583220-Ah-You-could-smell-the-redolence-from-here"
+          >Zain Ahamed</a
+        >
+      </p>
     </div>
   </div>
 
   <div class="copyright-alt">
-    <p>Copyright &copy; 2021. Built by <a href="https://khusanov-m-r.netlify.app/">Khusanov M. R.</a> Designed by<a href="https://dribbble.com/shots/15583220-Ah-You-could-smell-the-redolence-from-here"> Zain Ahamed</a></p>
+    <p>
+      Copyright &copy; 2021. Built by
+      <a href="https://khusanov-m-r.netlify.app/">Khusanov M. R.</a> Designed
+      by<a
+        href="https://dribbble.com/shots/15583220-Ah-You-could-smell-the-redolence-from-here"
+      >
+        Zain Ahamed</a
+      >
+    </p>
   </div>
 </footer>
+
 
     <!-- подключаем js -->
     <!-- Font Awesome -->

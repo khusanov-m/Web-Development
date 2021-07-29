@@ -37,6 +37,10 @@
       &::before {
         left: 4.4rem;
       }
+
+      @include respond(tab-port-2) {
+        right: 0;
+      }
     }
   }
 
@@ -71,12 +75,19 @@
   }
 
   @include respond(min-phone) {
-    
+    &__title {
+      margin: 0 auto 7rem;
+    }
+
+    &__intro .btn {
+      margin-bottom: 10rem;
+    }
   }
 }
 
 .perfumes {
   position: relative;
+  transition: transform 0.3s;
 }
 
 .perfume {
@@ -114,10 +125,8 @@
     left: 100%;
     width: 50%;
     margin: auto 0;
-    
   }
 
-  
   &__title {
     font-size: 2.6rem;
     font-weight: 400;
@@ -142,23 +151,24 @@
     color: $color-white-1;
     text-decoration: none;
     text-transform: uppercase;
-    // border-bottom: 1px solid $color-white-1;
     line-height: 1.6;
     width: max-content;
     letter-spacing: 0.096rem;
 
     display: inline-block;
     padding-bottom: 0.3rem;
-    
+
     background-image: linear-gradient($color-white-1, $color-primary-dark);
     background-size: 0 3px, auto;
     background-repeat: no-repeat;
     background-position: center bottom;
-    transition: all .3s ease-out;
+    transition: all 0.3s ease-out;
+
+    position: absolute;
+    z-index: 10;
 
     &:hover {
       background-size: 100% 2px, auto;
-      
     }
   }
 
@@ -169,8 +179,6 @@
 
   &-2 {
     left: 100rem;
-    padding-right: 20rem;
-    overflow-x: hidden;
     align-items: center;
     margin-top: -4rem;
   }
@@ -194,7 +202,7 @@
       left: 75rem;
     }
   }
-  
+
   @include respond(tab-land) {
     &-1 {
       left: 0rem;
@@ -212,7 +220,21 @@
     }
   }
 
+  @include respond(tab-port-3) {
+    &-2 {
+      left: 80rem;
+    }
+    &__info {
+      width: 100%;
+    }
+  }
+
   @include respond(big-phone) {
+    &-2 {
+      margin-top: 0;
+      left: 73rem;
+    }
+
     &__number {
       font-size: 3.5rem;
       &-1 {
@@ -248,7 +270,24 @@
   }
 
   @include respond(min-phone) {
-    &-1, &-2 {
+    margin-top: 5rem;
+    &__title {
+      margin: 0 auto;
+    }
+
+    &__link {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__title,
+    &__info,
+    &__link {
+      text-align: center;
+    }
+
+    &-1,
+    &-2 {
       flex-direction: column;
     }
 

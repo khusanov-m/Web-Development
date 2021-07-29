@@ -1,7 +1,8 @@
 .features {
-  margin: 10rem 8rem 15rem 8rem;
+  margin: 15rem 8rem 15rem 8rem;
   align-items: center;
   padding-top: 5rem;
+  position: relative;
 
   @include respond(tab-land) {
     margin: 10rem 0rem 15rem;
@@ -43,6 +44,7 @@
     display: flex;
     justify-content: space-around;
     margin: 20rem auto 0 auto;
+    transform: translateX(0);
   }
 
 
@@ -161,11 +163,11 @@
       }
   
       &:hover::after {
-        animation: none !important;
+        animation: none;
       }
   
       &:hover::before {
-        animation: none !important;
+        animation: none;
       }
     }
   }
@@ -179,6 +181,9 @@
   @include respond(min-phone) {
     &__cards {
       margin: 15rem auto 0;
+      flex-direction: row;
+      justify-content: center;
+      transition: transform .3s;
     }
 
     &__intro {
@@ -192,7 +197,24 @@
     }
 
     &__card-1, &__card-3 {
-      display: none;
+      position: absolute;
+      // padding-top: 0;
+    }
+
+    &__card:last-child {
+      margin-top: 0;
+    }
+
+    &__card-1 {
+      transform: translateX(0);
+    }
+
+    &__card-2 {
+      transform: translateX(50rem);
+    }
+
+    &__card-3 {
+      transform: translateX(100rem);
     }
   }
 }

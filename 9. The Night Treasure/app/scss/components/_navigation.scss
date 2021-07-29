@@ -3,6 +3,7 @@
 .nav-top {
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   &__img {
     width: 12rem;
@@ -165,9 +166,9 @@
   &__item--active {
     position: relative;
 
-    border-top: 1px solid $color-primary-dark !important;
-    border-bottom: 1px solid $color-primary-dark !important;
-    border-right: 2px solid $color-primary-dark !important;
+    border-top: 1px solid $color-primary-dark;
+    border-bottom: 1px solid $color-primary-dark;
+    border-right: 2px solid $color-primary-dark;
 
     &::before {
       content: "";
