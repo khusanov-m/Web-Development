@@ -58,6 +58,14 @@
       width: 100rem;
       transform: translate(70%, -50%);
 
+      @include respond(huge-desktop) {
+        transform: translate(90%, -50%);
+      }
+
+      @include respond(big-desktop) {
+        transform: translate(80%, -50%);
+      }
+
       @include respond(tab-land) {
         display: none;
       }

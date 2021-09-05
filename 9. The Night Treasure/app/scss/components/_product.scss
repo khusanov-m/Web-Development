@@ -145,6 +145,13 @@
       &:active {
         transform: translate(-50%, -47%);
       }
+
+      @include respond(tab-land) {
+        &:hover,
+        &:active {
+          transform: translate(-50%, -50%);
+        }
+      }
     }
   }
 
@@ -169,7 +176,7 @@
     &__img {
       right: 19rem;
     }
-  
+
     &__details {
       right: 3rem;
     }
@@ -185,7 +192,7 @@
       height: 25rem;
       right: 22rem;
     }
-  
+
     &__details {
       top: 10rem;
       right: 0;
@@ -270,7 +277,6 @@
       bottom: inherit;
     }
 
-    
     &__info-text {
       margin-left: 5rem;
       text-align: left;
@@ -283,4 +289,3 @@
     }
   }
 }
-

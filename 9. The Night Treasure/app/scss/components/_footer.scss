@@ -93,6 +93,17 @@
       justify-content: center;
       display: flex;
     }
+
+    @include respond(tab-land) {
+      &:hover,
+      &:active {
+        transform: translateY(-50%);
+      }
+    }
+
+    @include respond(tab-port) {
+      padding-left: 1.8rem;
+    }
   }
 
   &__links {
@@ -127,7 +138,7 @@
 
     a,
     a:link,
-    :active {
+    a:active {
       text-decoration: none;
       color: $color-white-1;
       transition: all 0.2s;

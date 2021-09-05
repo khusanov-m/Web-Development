@@ -63,7 +63,7 @@
       background-color: $color-white-btn-1;
       width: 2.5rem;
       height: 3px;
-      left: 0.95rem;
+      left: 1rem;
       transition: all 0.2s;
     }
 
@@ -82,6 +82,15 @@
     &:hover::after {
       top: 2.7rem;
     }
+
+    @include respond(tab-land) {
+      &:hover::before {
+        top: 1.6rem;
+      }
+      &:hover::after {
+        top: 2.6rem;
+      }
+    }
   }
 
   &__link:link,
@@ -96,11 +105,10 @@
     }
   }
 
-  
   @include respond(mini-tab-port) {
     &__item {
       font-size: 1.5rem;
-  
+
       &:not(:last-child) {
         margin-right: 4rem;
       }
